@@ -93,6 +93,16 @@
   animation-direction: normal;
 }
 
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes rotate {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
@@ -244,12 +254,24 @@ body {
   transition: all .5s ease-in-out;
 }
 
+#lego {
+  margin-top: 80px;
+}
+
 #lego:hover, #circles:hover {
   transform: scale(1.25);
   box-shadow: 4px 4px 14px rgb(100,100,100);
   transition: all .5s ease-in-out;
 }
 
+#circles:hover {
+    box-shadow: 4px 4px 14px rgb(20,160,250);
+    animation: rotate;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: all 1s ease-in-out;
+}
 /* Featurettes
 ------------------------- */
 
@@ -271,6 +293,15 @@ body {
   margin: 10px auto 20px auto;
 }
 
+#hand {
+  font-size: 20px;
+  box-shadow: none;
+}
+
+#hand:hover {
+  transform: none;
+}
+
 .fa {
   text-align: center;
   color: rgba(0,0,0,.8);
@@ -285,6 +316,22 @@ body {
   color: rgba(0,0,0,1);
   transform: scale(1.20);
   transition: all .2s ease-in-out;
+}
+
+#about-more {
+  display: none;
+  color: rgba(0,0,0,1);
+  background-color: rgb(255,255,255);
+}
+
+#about-close {
+  display: none;
+  margin: 0 auto;
+  width: 85px;
+}
+
+#about-content {
+  text-align: left;
 }
 
 
@@ -314,22 +361,22 @@ body {
   /* Bump up size of carousel content */
 
   .carousel {
-    width: 75%;
-    height: 700px;
-    margin: -50px auto 30px auto;
+    width: 79%;
+    height: 300px;
+    margin: 20px auto 100px auto;
   }
 
   /* Declare heights because of positioning of img element */
   .carousel .item {
-    height: 700px;
+    height: 300px;
   }
   .carousel-inner > .item > img {
-    height: 700px;
+    height: 300px;
   }
 
   .carousel-caption p {
-    margin-bottom: 20px;
-    font-size: 21px;
+    margin-bottom: 35px;
+    font-size: 20px;
     line-height: 1.4;
   }
 
@@ -348,6 +395,10 @@ body {
   #footer-name {
     font-size: 8pt;
     letter-spacing: 5px;
+  }
+
+  #slide-captions {
+    font-size: 56px;
   }
 }
 

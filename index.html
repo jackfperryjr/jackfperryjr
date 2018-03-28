@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Hi. I'm Jack. I'm a web designer and web developer.">
     <meta name="author" content="Jack F. Perry, Jr.">
-    <link rel="icon" href="images/icon-jack.png">
-    <title>jack f perry jr</title>
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
     <!-- Bootstrap core CSS -->
@@ -23,8 +20,10 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <!-- Custom styles for this template -->
+    <!-- Custom styles -->
     <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/icon-jack.png">
+    <title>jack f perry jr</title>
   </head>
 <!-- NAVBAR
 ================================================== -->
@@ -51,8 +50,8 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resumé<span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="images/jackfperryjrResume.pdf" download>Resumé PDF</a></li>
-                    <li><a href="images/jackfperryjrResume.docx" download>Resumé DOCX</a></li>
+                    <li><a href="docs/jackfperryjrResume.pdf" download>Resumé PDF</a></li>
+                    <li><a href="docs/jackfperryjrResume.docx" download>Resumé DOCX</a></li>
                     <li><a href="https://jackfperryjr.github.io/resume/" target="_blank">Resumé HTML</a></li>
                   </ul>
                 </li>
@@ -76,29 +75,29 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="images/mantis.jpg" alt="First slide">
+          <img class="first-slide" src="" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <h1 id="slide-captions">Hi. I'm Jack.</h1>
+              <p>I'm an artist. I'm a designer. I'm a developer. I'm a nerd. I'm a photographer.</p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img class="second-slide" src="images/lanterns.jpg" alt="Second slide">
+          <img class="second-slide" src="" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <h1 id="slide-captions">Heading.</h1>
+              <p>Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. </p>
             </div>
           </div>
         </div>
         <div class="item">
-          <img class="third-slide" src="images/tunnel.jpg" alt="Third slide">
+          <img class="third-slide" src="images/lego-man-1.jpg" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <h1 id="slide-captions">Heading.</h1>
+              <p>Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. Content. </p>
             </div>
           </div>
         </div>
@@ -113,7 +112,6 @@
       </a>
     </div><!-- /.carousel -->
 
-
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
@@ -123,37 +121,60 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="col-lg-4">
-          <img id="circles" class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
+          <img id="circles" class="img-circle" src="images/projects.png" alt="Generic placeholder image" width="140" height="140">
+          <h2>Projects</h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-default" href="#projects" role="button">View details<span id="hand" class="fa fa-hand-o-down"></span></a></p>
         </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
+        <div id="about" class="col-lg-4">
           <img id="circles" class="img-circle" src="images/profile-me.jpg" alt="Generic placeholder image" width="140" height="140">
           <h2>About Me</h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+          <p><div id="about-open" class="btn btn-default" role="button">View more<span id="hand" class="fa fa-hand-o-down"></span></div></p>
+            <div id="about-more">
+              <p id="about-content">content<br>
+              content<br>
+              content<br>
+              content<br>
+              content<br>
+              </p>
+              <p id="about-content">content<br>
+              content<br>
+              content<br>
+              content<br>
+              content<br>
+              </p>
+            <div id="about-close" class="btn btn-default">Close<span id="hand" class="fa fa-hand-o-up"></span></div>
+          </div>
         </div><!-- /.col-lg-4 -->
         <div class="col-lg-4">
           <img id="circles" class="img-circle" src="images/moogleFavicon.png" alt="Generic placeholder image" width="140" height="140">
           <h2>Final Fantasy Compendium</h2>
           <p>My passion project. I loved Final Fantasy as a kid, and while I don't play much any more, I'm still a huge fan. So, I'm building a compendium full of characters and monsters. Check it out!</p>
-          <p><a class="btn btn-default" href="https://jackfperryjr.github.io/finalFantasyComp/" target="_blank" role="button">Visit &raquo;</a></p>
+          <p><a class="btn btn-default" href="https://jackfperryjr.github.io/finalFantasyComp/" target="_blank" role="button">Visit<span id="hand" class="fa fa-hand-o-right"></span></a></p>
         </div><!-- /.col-lg-4 -->
       </div><!-- /.row -->
 
 
+
       <!-- START THE FEATURETTES -->
 
-      <hr class="featurette-divider">
+      <hr id="projects" class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Consider Boutique!<br><span class="text-muted">Casey and Toots.</span></h2>
+          <p class="lead">Consider Boutique is a small shop located just off Frankfort Ave., Louisville, KY. I helped Casey finish a previously unfinished migration from one host to another and offered an updated mockup for her site. She accepted.<br><a href="http://considerboutique.com/" target="_blank">www.considerboutique.com</a></p>
         </div>
         <div class="col-md-5">
-          <img id="lego" class="featurette-image img-responsive center-block" src="images/lego-man-1.jpg" alt="Generic placeholder image">
+          <img id="lego" class="featurette-image img-responsive center-block" src="images/consider-boutique-1.png" alt="Consider Boutique web site home." data-toggle="modal" data-target=".bd-example-modal-lg">
+          <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -165,19 +186,20 @@
           <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
-          <img id="lego" class="featurette-image img-responsive center-block" src="images/lego-man-2.jpg" alt="Generic placeholder image">
+          <img id="lego" class="featurette-image img-responsive center-block" src="images/mantis.jpg" alt="Generic placeholder image">
         </div>
       </div>
 
       <hr class="featurette-divider">
 
-      <div class="row featurette">
+      <div id="contact" class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">If you'd like to work with me: <span class="text-muted">Contact me!</span></h2><br>
+          <p class="lead">phone &rArr; +1.502.644.6855<br>
+            email &rArr; <a href="mailto:jack.franklin.perryjr@gmail.com">jack.franklin.perryjr@gmail.com</a></p>
         </div>
         <div class="col-md-5">
-          <img id="lego" class="featurette-image img-responsive center-block" src="images/lego-man-3.jpg" alt="Generic placeholder image">
+          <img id="lego" class="featurette-image img-responsive center-block" src="images/bamboo.jpg" alt="Generic placeholder image">
         </div>
       </div>
 
@@ -205,5 +227,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
+    <script src="index.js"></script>
   </body>
 </html>
