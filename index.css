@@ -93,6 +93,75 @@
   animation-direction: normal;
 }
 
+@-webkit-keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.1) rotate(30deg);
+    transform: scale(0.1) rotate(30deg);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.1) rotate(30deg);
+    transform: scale(0.1) rotate(30deg);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.jackInTheBox {
+  -webkit-animation-name: jackInTheBox;
+  animation-name: jackInTheBox;
+  -webkit-animation-duration: 1s, 2s;
+  animation-duration: 1s, 2s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+}
+
 @keyframes rotate {
   from {transform: rotate(0deg);}
   to {transform: rotate(360deg);}
@@ -101,6 +170,34 @@
 @-webkit-keyframes rotate {
   from {transform: rotate(0deg);}
   to {transform: rotate(360deg);}
+}
+
+@keyframes wobble-top {
+    30% {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+
+.wobble-top {
+	display: inline-block;
+  -webkit-animation-duration: 1s, 2s;
+  animation-duration: 1s, 2s;
+  -webkit-animation-delay: 0s, 0s;
+  animation-delay: 0s, 0s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
 }
 
 
@@ -174,8 +271,8 @@ body {
 .navbar-wrapper {
   position: sticky;
   top: 0;
-  right: 0;
-  left: 0;
+  width: 100%;
+  margin: 0 auto;
   z-index: 20;
 }
 
@@ -230,6 +327,22 @@ body {
   left: 0;
   min-width: 100%;
   height: 350px;
+}
+
+.jumbotron {
+  padding: 7% 20%;
+  background-color: rgb(255,255,255);
+}
+
+.jumbotron > img {
+  margin: 40px auto !important;
+}
+
+#logo:hover {
+  animation-name: wobble-top;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
 }
 
 
@@ -340,7 +453,7 @@ body {
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
-    margin-top: 0;
+    width: 80%;
   }
   
   .navbar-wrapper .container {
@@ -355,6 +468,10 @@ body {
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
     border-radius: 4px;
+  }
+
+  .jumbotron {
+    padding: 5% 40%;
   }
 
   /* Bump up size of carousel content */
