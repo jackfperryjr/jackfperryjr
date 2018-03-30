@@ -336,6 +336,8 @@ body {
 }
 
 .jumbotron > img {
+  width: 220px;
+  height: auto;
   margin: 40px auto 10px auto !important;
   z-index: -10;
 }
