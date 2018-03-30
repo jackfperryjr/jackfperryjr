@@ -338,7 +338,7 @@ body {
 .jumbotron > img {
   width: 220px;
   height: auto;
-  margin: 40px auto 10px auto !important;
+  margin: 100px auto 0 auto !important;
   z-index: -10;
 }
 
@@ -485,6 +485,7 @@ body {
   .jumbotron > img {
     width: 325px;
     height: auto;
+    margin: 30px auto 0 auto !important;
   }
 
   /* Bump up size of carousel content */
