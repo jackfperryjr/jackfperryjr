@@ -174,13 +174,13 @@
 
 @keyframes wobble-top {
     30% {
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
+    -webkit-transform: rotate(25deg);
+    transform: rotate(25deg);
   }
 
   70% {
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-25deg);
+    transform: rotate(-25deg);
   }
 }
 
@@ -192,8 +192,8 @@
   animation-delay: 0s, 0s;
   -webkit-animation-timing-function: ease-out, ease-in-out;
   animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-direction: normal;
@@ -336,13 +336,13 @@ body {
 }
 
 .jumbotron > img {
-  margin: 40px auto !important;
+  margin: 40px auto 10px auto !important;
   z-index: -10;
 }
 
-#logo:hover {
+#logo {
   animation-name: wobble-top;
-	animation-duration: 1.5s;
+	animation-duration: 5s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
 }
@@ -367,6 +367,10 @@ body {
 #lego, #circles {
   box-shadow: 4px 4px 10px rgb(50,50,50);
   transition: all .5s ease-in-out;
+}
+
+#circles {
+  margin-top: 40px;
 }
 
 #lego {
@@ -473,7 +477,12 @@ body {
   }
 
   .jumbotron {
-    padding: 5% 40%;
+    padding: 5% 38%;
+  }
+
+  .jumbotron > img {
+    width: 325px;
+    height: auto;
   }
 
   /* Bump up size of carousel content */
