@@ -1,16 +1,29 @@
+// <-- Created by Jack F. Perry, Jr. -->
+// =====================================
+
+// <-- Setting some variables -->
+// ==============================
 const aboutClose = $("#about-close");
 const aboutOpen = $("#about-open");
 const aboutMore = $("#about-more");
 const aboutContent = $("#about-content");
 
-$(document).ready(function() { 
+// <-- Hey, DOM, you ready? -->
+// ============================
+$(document).ready(function() {
+
+    // <-- Click function to OPEN more about me -->
+    // ============================================
     aboutOpen.click(function() {
         aboutOpen.fadeOut();
         aboutMore.animate({"height":"250px"});
         aboutMore.slideDown();
         aboutClose.delay(1000).fadeIn();
         aboutContent.slideDown();
-    });   
+    });  
+    
+    // <-- Click function to CLOSE more about me -->
+    // =============================================
     aboutClose.click(function() {
         aboutClose.fadeOut();
         aboutMore.animate({"height":"0"});
@@ -19,3 +32,6 @@ $(document).ready(function() {
         aboutOpen.delay(1000).fadeIn();
     });   
 });
+
+// ====================
+// <-- That's that. -->
