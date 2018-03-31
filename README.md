@@ -1,2 +1,4 @@
-# jackfperryjr
-My personal portfolio website (in progress).
+# jackfperryjr.com
+```
+My personal portfolio website.
+```
