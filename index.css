@@ -172,20 +172,90 @@
   to {transform: rotate(360deg);}
 }
 
-@keyframes wobble-top {
-    30% {
-    -webkit-transform: rotate(25deg);
-    transform: rotate(25deg);
+@keyframes wobble {
+    0% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
   }
 
-  70% {
-    -webkit-transform: rotate(-25deg);
-    transform: rotate(-25deg);
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
   }
 }
 
-.wobble-top {
+@-webkit-keyframes wobble {
+    0% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+  }
+}
+
+.wobble {
 	display: inline-block;
+  -webkit-animation-duration: 1s, 2s;
+  animation-duration: 1s, 2s;
+  -webkit-animation-delay: 0s, 0s;
+  animation-delay: 0s, 0s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+}
+
+@-webkit-keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+.hvr-hang {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
   -webkit-animation-duration: 1s, 2s;
   animation-duration: 1s, 2s;
   -webkit-animation-delay: 0s, 0s;
@@ -209,7 +279,7 @@
 body {
   padding-bottom: 40px;
   color: rgb(0,0,0);
-  background-color: rgba(240,240,240);
+  background-color: rgba(255,255,255,1);
   font-family: 'Raleway', Helvetica, Verdana, Arial;
 }
 
@@ -218,53 +288,63 @@ body {
 -------------------------------------------------- */
 
 .navbar-inverse .navbar-brand {
-  color: rgb(255,255,255);
+  background-color: rgb(255,255,255);
+  color: rgb(0,0,0) !important;
   transition: all .5s ease-in-out;
 }
 
 .navbar-inverse .navbar-nav > li > a {
-  color: rgb(255,255,255);
+  border-radius: 5px;
+  background-color: rgb(255,255,255);
+  color: rgb(0,0,0) !important;
   transition: all .5s ease-in-out;
 }
 
 .navbar-inverse .navbar-nav > .dropdown > a .caret {
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(255,255,255,1);
   transition: all .5s ease-in-out;
 }
 
 .navbar-inverse .navbar-nav > .dropdown > a:hover .caret,
 .navbar-inverse .navbar-nav > .dropdown > a:focus .caret {
   border: none;
-  background-color: rgba(0,0,0,0);
+  border-radius: 5px;
+  background-color: rgba(20,160,250,1);
   transition: all .5s ease-in-out;
 }
 
 .navbar-inverse .navbar-nav > .dropdown > a:hover,
 .navbar-inverse .navbar-nav > .dropdown > a:focus {
-  background-color: rgba(255,255,255,.3);
+  background-color: rgba(20,160,250,.3);
   box-shadow: 2px 2px 10px rgb(0,0,0);
   transition: all .5s ease-in-out;
+  z-index: 100;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
-  background-color: rgba(255,255,255,.3);
+  border-radius: 5px;
+  background-color: rgba(20,160,250,.3);
   box-shadow: 2px 2px 10px rgb(0,0,0);
   transition: all .5s ease-in-out;
+  z-index: 100;
 }
 
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-  background-color: rgba(255,255,255,.3);
+  border-radius: 5px;
+  background-color: rgba(20,160,250,.3);
   transition: all .5s ease-in-out;
+  z-index: 100;
 }
 
 .navbar-inverse .navbar-nav > .dropdown .active,
 .navbar-inverse .navbar-nav > .dropdown .active,
 .navbar-inverse .navbar-nav > .dropdown .active {
-  background-color: rgba(255,255,255,.3);
+  background-color: rgba(20,160,250,.3);
   transition: all .5s ease-in-out;
+  z-index: 100;
 }
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
@@ -295,39 +375,13 @@ body {
 }
 
 .navbar-inverse {
-  background-color: rgba(0,0,0,1);
+  background-color: rgba(255,255,255,1);
   border: none;
   box-shadow: 2px 2px 10px rgb(50,50,50);
 }
 
 #my-name {
   letter-spacing: 5px;
-}
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  height: 350px;
-  margin-bottom: 60px;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel .item {
-  height: 350px;
-  background-color: rgb(230,230,230);
-}
-.carousel-inner > .item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 350px;
 }
 
 .jumbotron {
@@ -340,13 +394,14 @@ body {
   height: auto;
   margin: 100px auto 0 auto !important;
   z-index: -10;
-}
-
-#logo {
-  animation-name: wobble-top;
+  animation-name: wobble;
 	animation-duration: 5s;
 	animation-timing-function: ease-in-out;
 	animation-iteration-count: infinite;
+}
+
+.jumbotron > h1 {
+  display: none;
 }
 
 
@@ -354,6 +409,11 @@ body {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
+.content-background {
+  border-radius: 5px;
+  background: linear-gradient(rgb(240,240,240), rgb(255,255,255));
+}
+
 .marketing .col-lg-4 {
   margin-bottom: 20px;
   text-align: center;
@@ -418,6 +478,10 @@ body {
   box-shadow: none;
 }
 
+button *:hover, button *:focus {
+  color: rgb(255,255,255) !important;
+}
+
 #hand:hover {
   transform: none;
 }
@@ -441,7 +505,8 @@ body {
 #about-more {
   display: none;
   color: rgba(0,0,0,1);
-  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255,0);
+
 }
 
 #about-close {
@@ -454,15 +519,30 @@ body {
   text-align: left;
 }
 
+button {
+    animation: hvr-hang;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transition: all .5s ease-in-out;
+}
+
+button:hover, button:focus {
+  color: rgb(255,255,255) !important;
+  background-color: rgba(20,160,250,.7) !important;
+}
+
+#project-open > a {
+  text-decoration: none;
+  color: rgb(0,0,0);
+}
+
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
 @media (min-width: 768px) {
-  /* Navbar positioning foo */
-  .navbar-wrapper {
-    width: 80%;
-  }
+  /* Navbar positioning */
   
   .navbar-wrapper .container {
     padding-right: 15px;
@@ -479,35 +559,31 @@ body {
   }
 
   .jumbotron {
-    padding: 5% 38%;
+    padding: 5% 5% 35% 5%;  
   }
 
   .jumbotron > img {
+    float: right;
     width: 325px;
     height: auto;
-    margin: 30px auto 0 auto !important;
+    margin: 3% 15% 0 0 !important;
+  }
+  
+  .jumbotron > h1 {
+    display: block;
+    font-size: 60pt;
+    float: left;
+    margin: 10% 0 0 15%;
+    line-height: 105px;
+    letter-spacing: 5px;
   }
 
-  /* Bump up size of carousel content */
-
-  .carousel {
-    width: 79%;
-    height: 300px;
-    margin: 20px auto 100px auto;
+  #my-name {
+    display: none;
   }
 
-  /* Declare heights because of positioning of img element */
-  .carousel .item {
-    height: 300px;
-  }
-  .carousel-inner > .item > img {
-    height: 300px;
-  }
-
-  .carousel-caption p {
-    margin-bottom: 35px;
-    font-size: 20px;
-    line-height: 1.4;
+  .col-lg-4 {
+    width: 50%;
   }
 
   .featurette-heading {
