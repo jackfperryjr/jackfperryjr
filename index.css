@@ -167,6 +167,85 @@
   animation-direction: normal;
 }
 
+@-webkit-keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);
+  }
+}
+
+@keyframes lightSpeedIn {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+    opacity: 0;
+  }
+
+  60% {
+    -webkit-transform: skewX(20deg);
+    transform: skewX(20deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: skewX(-5deg);
+    transform: skewX(-5deg);
+    opacity: 1;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);
+  }
+}
+
+.lightSpeedIn {
+  -webkit-animation-name: lightSpeedIn;
+  animation-name: lightSpeedIn;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-duration: 1s, 2s;
+  animation-duration: 1s, 2s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+}
+
 @keyframes rotate {
   from {transform: rotate(0deg);}
   to {transform: rotate(360deg);}
@@ -177,54 +256,18 @@
   to {transform: rotate(360deg);}
 }
 
-@keyframes wobble {
-    0% {
-    -webkit-transform: rotate(10deg);
-    transform: rotate(10deg);
-  }
-
-  50% {
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg);
-  }
-
+@keyframes tilt {
   100% {
-    -webkit-transform: rotate(10deg);
-    transform: rotate(10deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);
   }
 }
 
-@-webkit-keyframes wobble {
-    0% {
-    -webkit-transform: rotate(10deg);
-    transform: rotate(10deg);
-  }
-
-  50% {
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg);
-  }
-
+@-webkit-keyframes tilt {
   100% {
-    -webkit-transform: rotate(10deg);
-    transform: rotate(10deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);
   }
-}
-
-.wobble {
-	display: inline-block;
-  -webkit-animation-duration: 1s, 2s;
-  animation-duration: 1s, 2s;
-  -webkit-animation-delay: 0s, 0s;
-  animation-delay: 0s, 0s;
-  -webkit-animation-timing-function: ease-out, ease-in-out;
-  animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
 }
 
 @-webkit-keyframes hvr-hang {
@@ -406,14 +449,10 @@ body {
 }
 
 .jumbotron > img {
-  width: 220px;
+  width: 100%;
   height: auto;
-  margin: 100px auto 0 auto !important;
+  margin: 150px auto 0 auto !important;
   z-index: -10;
-  animation-name: wobble;
-	animation-duration: 5s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
 }
 
 .jumbotron > h1 {
@@ -565,7 +604,7 @@ button:hover, button:focus {
 /*     <--- Media query-ing responsy-stuff --->     */
 /*==================================================*/
 
-@media (min-width: 768px) {
+@media (min-width: 947px) {
   /* Navbar positioning */
   
   .navbar-wrapper .container {
@@ -583,7 +622,7 @@ button:hover, button:focus {
 
   .jumbotron > img {
     float: right;
-    width: 325px;
+    width: 28%;
     height: auto;
     margin: 3% 15% 0 0 !important;
   }
