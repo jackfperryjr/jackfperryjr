@@ -359,13 +359,13 @@ body {
 .navbar-inverse .navbar-nav > .dropdown > a:focus .caret {
   border: none;
   border-radius: 5px;
-  background-color: rgba(20,160,250,1);
+  background-color: rgba(0,180,70,.7);
   transition: all .5s ease-in-out;
 }
 
 .navbar-inverse .navbar-nav > .dropdown > a:hover,
 .navbar-inverse .navbar-nav > .dropdown > a:focus {
-  background-color: rgba(20,160,250,.3);
+  background-color: rgba(0,180,70,.7);
   box-shadow: 2px 2px 10px rgb(0,0,0);
   transition: all .5s ease-in-out;
   z-index: 100;
@@ -374,7 +374,7 @@ body {
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
   border-radius: 5px;
-  background-color: rgba(20,160,250,.3);
+  background-color: rgba(0,180,70,.7);
   box-shadow: 2px 2px 10px rgb(0,0,0);
   transition: all .5s ease-in-out;
   z-index: 100;
@@ -384,7 +384,7 @@ body {
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   border-radius: 5px;
-  background-color: rgba(20,160,250,.3);
+  background-color: rgba(0,180,70,.7);
   transition: all .5s ease-in-out;
   z-index: 100;
 }
@@ -392,7 +392,7 @@ body {
 .navbar-inverse .navbar-nav > .dropdown .active,
 .navbar-inverse .navbar-nav > .dropdown .active,
 .navbar-inverse .navbar-nav > .dropdown .active {
-  background-color: rgba(20,160,250,.3);
+  background-color: rgba(0,180,70,.7);
   transition: all .5s ease-in-out;
   z-index: 100;
 }
@@ -441,6 +441,10 @@ body {
 
 #my-name {
   letter-spacing: 5px;
+  background: -webkit-linear-gradient(rgba(50,0,50,1), rgba(100,0,250,.5));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .jumbotron {
@@ -461,7 +465,7 @@ body {
 
 .content-background {
   border-radius: 5px;
-  background: linear-gradient(rgb(240,240,240), rgb(255,255,255));
+  background: linear-gradient(rgba(240,240,240,.5), rgba(0,0,0,0));
 }
 
 .marketing .col-lg-4 {
@@ -495,7 +499,7 @@ body {
 }
 
 #circles:hover {
-    box-shadow: 4px 4px 14px rgb(20,160,250);
+    box-shadow: 4px 4px 14px rgba(0,180,70,.9);
     animation: rotate;
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
@@ -579,16 +583,16 @@ button *:hover, button *:focus {
 }
 
 button {
-    animation: hvr-hang;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    transition: all .5s ease-in-out;
+  animation: hvr-hang;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition: all .5s ease-in-out;
 }
 
 button:hover, button:focus {
   color: rgb(255,255,255) !important;
-  background-color: rgba(20,160,250,.7) !important;
+  background-color: rgba(0,180,70,.9) !important;
 }
 
 #project-open > a {
@@ -605,12 +609,24 @@ button:hover, button:focus {
 /*==================================================*/
 
 @media (min-width: 947px) {
-  /* Navbar positioning */
   
+  .navbar-nav {
+    float: none;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+  }
+
+  .navbar-nav > li {
+    display: inline-block;
+    float: none;
+  }
+
   .navbar-wrapper .container {
     padding-right: 15px;
     padding-left: 15px;
   }
+
   .navbar-wrapper .navbar {
     padding-right: 0;
     padding-left: 0;
@@ -632,8 +648,14 @@ button:hover, button:focus {
     font-size: 60pt;
     float: left;
     margin: 10% 0 0 15%;
+    padding: 2%;
     line-height: 105px;
     letter-spacing: 5px;
+    border: 8px solid rgb(0,0,0);
+    background: -webkit-linear-gradient(rgba(100,0,250,1), rgba(100,0,250,.5));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   #my-name {
