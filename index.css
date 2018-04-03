@@ -400,9 +400,9 @@ body {
 .navbar-wrapper {
   position: sticky;
   position: -webkit-sticky;
-  top: 0;
+  top: -2px;
   width: 100%;
-  margin: 0 auto;
+  margin: 0 auto 30% auto;
   z-index: 20;
 }
 
@@ -439,33 +439,32 @@ body {
 /*   <--- Some more Bootstrap customization --->   */
 /*=================================================*/
 
-#my-name {
-  letter-spacing: 5px;
-  background: -webkit-linear-gradient(rgba(50,0,50,1), rgba(100,0,250,.5));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+.jumbotron {
+  padding: 7% 10%;
+  background-color: rgb(255,255,255);
 }
 
-.jumbotron {
-  padding: 7% 20%;
-  background-color: rgb(255,255,255);
+.jumbotron > h1 {
+    display: block;
+    width: 100%;
+    font-size: 44pt;
+    margin: 10% auto 40% auto;
+    padding: 2%;
+    line-height: 105px;
+    letter-spacing: 5px;
+    text-align: center;
+    border: none;
+    background: -webkit-linear-gradient(rgba(100,0,250,1), rgba(100,0,250,.5));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .jumbotron > img {
   width: 100%;
   height: auto;
-  margin: 150px auto 0 auto !important;
+  margin: 0 auto 150px auto !important;
   z-index: -10;
-}
-
-.jumbotron > h1 {
-  display: none;
-}
-
-.content-background {
-  border-radius: 5px;
-  background: linear-gradient(rgba(240,240,240,.5), rgba(0,0,0,0));
 }
 
 .marketing .col-lg-4 {
@@ -633,33 +632,27 @@ button:hover, button:focus {
   }
 
   .jumbotron {
-    padding: 5% 5% 35% 5%;  
-  }
-
-  .jumbotron > img {
-    float: right;
-    width: 28%;
-    height: auto;
-    margin: 3% 15% 0 0 !important;
+    padding: 0;  
   }
   
   .jumbotron > h1 {
     display: block;
-    font-size: 60pt;
-    float: left;
-    margin: 10% 0 0 15%;
+    width: 60%;
+    font-size: 50pt;
+    margin: 10% auto 0 auto;
     padding: 2%;
     line-height: 105px;
     letter-spacing: 5px;
-    border: 8px solid rgb(0,0,0);
-    background: -webkit-linear-gradient(rgba(100,0,250,1), rgba(100,0,250,.5));
+    text-align: center;
+    border: none;
+    background: -webkit-linear-gradient(rgba(50,0,250,1), rgba(50,0,250,.3));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
-  #my-name {
-    display: none;
+  #desktop {
+    width: 60%;
   }
 
   .col-lg-4 {
