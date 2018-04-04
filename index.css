@@ -403,7 +403,7 @@ body {
   position: -webkit-sticky;
   top: -2px;
   width: 100%;
-  margin: 0 auto 30% auto;
+  margin: 40% auto 0 auto;
   z-index: 20;
 }
 
@@ -424,7 +424,7 @@ body {
 }
 
 .navbar-inverse {
-  background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
+  background-color: rgb(255,255,255);
   border: none;
 }
 
@@ -595,6 +595,11 @@ button:focus {
   
   .navbar-wrapper {
     margin-top: -25px;
+  }
+
+  .navbar-inverse {
+    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
+    border: none;
   }
 
   .navbar-nav {
