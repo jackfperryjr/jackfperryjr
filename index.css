@@ -403,7 +403,7 @@ body {
   position: -webkit-sticky;
   top: -2px;
   width: 100%;
-  margin: 40% auto 0 auto;
+  margin: 50% auto 0 auto;
   z-index: 20;
 }
 
@@ -594,7 +594,7 @@ button:focus {
 @media (min-width: 947px) {
   
   .navbar-wrapper {
-    margin-top: -25px;
+    margin: -25px auto 30% auto;
   }
 
   .navbar-inverse {
