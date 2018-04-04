@@ -1,7 +1,7 @@
 <!-- Created by Jack F. Perry, Jr. -->
 <!--        jackfperryjr.com       -->
 <!-- ============================= -->
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <!-- Boring stuff. -->
@@ -62,11 +62,11 @@
                 <li><a href="#about"><strong>&lt; about &gt;</strong></a></li>
                 <li><a href="#contact"><strong>&lt; contact &gt;</strong></a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>&lt; resumé &gt;</strong><span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>&lt; projects &gt;</strong><span class="caret"></span></a>
                   <ul class="dropdown-menu">
-                    <li><a href="docs/jackfperryjrResume.pdf" download>download resumé as pdf</a></li>
-                    <li><a href="docs/jackfperryjrResume.docx" download>download resumé as docx</a></li>
-                    <li><a href="https://jackfperryjr.github.io/resume/" target="_blank">visit resumé in html</a></li>
+                    <li><a href="" ></a></li>
+                    <li><a href="https://jackfperryjr.github.io/finalFantasyComp/" target="_blank">final fantasy compendium</a></li>
+                    <li><a href="https://jackfperryjr.github.io/resume/" target="_blank">my resumé in html</a></li>
                   </ul>
                 </li>
               </ul>
@@ -83,49 +83,33 @@
       <hr class="featurette-divider">
       <!-- =================================== -->
       <!-- Two columns of stuff under the header-like thing. -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img id="circles" class="img-circle" src="images/project-gear.png" alt="Gear icon for the Projects section." title="Gear icon for the Projects section." width="140" height="140">
-          <h2>Projects</h2>
-          <p>In addition to this site I've built and designed a few other things. Go explore!</p>
-          <p><a href="#projects"><button id="project-open" class="btn btn-default">Explore<span id="hand" class="fa fa-hand-o-down"></span></button></a></p>
-        </div>
-        <!-- End of one Bootstrap column one (.col-lg-4). -->
-        <!-- ============================================ -->
-        <div id="about" class="col-lg-4">
-          <img id="circles" class="img-circle" src="images/profile-me.jpg" alt="Circle with a real picture of Jack's face." title="Circle with a real picture of Jack's face."  width="140" height="140">
-          <h2>About Me</h2>
-          <p>I'm a digital artist and photography is a hobby of mine. I'm also a developer and love creating beautiful images and organizing and manipulating them on the web!</p>
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">About Me<br><span class="text-muted">Jack F. Perry, Jr.</span></h2>
+          <p class="about-p">I'm a digital artist and photography is a hobby of mine. I'm also a developer and love creating beautiful images and organizing and manipulating them on the web!</p>
           <p><button id="about-open" class="btn btn-default" role="button">Read More<span id="hand" class="fa fa-hand-o-down"></span></button></p>
             <div id="about-more">
-              <p id="about-content">Born in Northeast Ohio and currently residing in Louisville, Kentucky. I started drawing since before I can remember. During my teen years (1995-ish!) I took to the web and started building web sites, on my own, using Yahoo! Geocities; do you remember that!? 
+              <p id="about-content" class="about-p">Born in Northeast Ohio and currently residing in Louisville, Kentucky. I started drawing since before I can remember. During my teen years (1995-ish!) I took to the web and started building web sites, on my own, using Yahoo! Geocities; do you remember that!? 
               </p>
-              <p id="about-content">Then I got into gaming and got lazy. But, now I've completed an Associate's in Applied Science in Computer Programming. I'm also a student with Code Louisville and I continue to teach myself new programming languages, technologies, and best practices on a daily basis. The learning never stops!
+              <p id="about-content" class="about-p">Then I got into gaming and got lazy. But, now I've completed an Associate's in Applied Science in Computer Programming. I'm also a student with Code Louisville and I continue to teach myself new programming languages, technologies, and best practices on a daily basis. The learning never stops!
               </p>
             <button id="about-close" class="btn btn-default">Close<span id="hand" class="fa fa-hand-o-up"></span></button>
           </div>
         </div>
-        <!-- End of second Bootstrap column two (.col-lg-4). -->
-        <!-- =============================================== -->
+        <div class="col-md-5">
+          <img id="lego" class="featurette-image img-responsive center-block" src="images/profile-me.jpg" alt="Rectangle with a real picture of Jack's face." title="Jack's face.">
+        </div>
       </div>
       <!-- End of that stuff. -->
       <!-- ================== -->
       <!-- ========================================= -->
       <!-- Start the projects. I need more projects. -->
       <hr id="projects" class="featurette-divider">
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Consider Boutique!<br><span class="text-muted">by Casey</span></h2>
-          <p class="lead">Consider Boutique is a small shop located just off Frankfort Ave., Louisville, KY. I helped Casey finish a previously unfinished migration from one host to another and offered an updated mockup for her site. She accepted.<br><a href="http://considerboutique.com/" target="_blank">www.considerboutique.com <span id="hand" class="fa fa-hand-o-right"></span></a></p>
-        </div>
-        <div class="col-md-5">
-          <img id="lego" class="featurette-image img-responsive center-block" src="images/consider-boutique.png" alt="Consider Boutique web site home." title="Consider Boutique web site home.">
-          <!-- Gonna add a slideshow or modal here sometime, oh sometime. -->
-        </div>
-      </div>
+      <!--
+      -->
       <!-- End of one project. -->
       <!-- =================== -->
-      <hr class="featurette-divider">
+      <!-- <hr class="featurette-divider"> -->
       <!-- =================== -->
       <!-- Start of another project section. -->
       <div class="row featurette">

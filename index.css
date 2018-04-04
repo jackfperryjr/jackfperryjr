@@ -1,4 +1,5 @@
 /* Created by Jack F. Perry, Jr. */
+/*   <-- jackfperryjr.com -->    */
 
 /*================================================*/
 /*          <--- Defining animations --->         */
@@ -338,20 +339,20 @@ body {
 /*==================================================*/
 
 .navbar-inverse .navbar-brand {
-  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255,0);
   color: rgb(0,0,0) !important;
   transition: all .5s ease-in-out;
 }
 
 .navbar-inverse .navbar-nav > li > a {
   border-radius: 5px;
-  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255,0);
   color: rgb(0,0,0) !important;
   transition: all .5s ease-in-out;
 }
 
 .navbar-inverse .navbar-nav > .dropdown > a .caret {
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255,255,255,0);
   transition: all .5s ease-in-out;
 }
 
@@ -423,7 +424,7 @@ body {
 }
 
 .navbar-inverse {
-  background-color: rgba(255,255,255,1);
+  background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
   border: none;
 }
 
@@ -440,14 +441,14 @@ body {
 /*=================================================*/
 
 .jumbotron {
-  padding: 7% 10%;
+  padding: 7% 0;
   background-color: rgb(255,255,255);
 }
 
 .jumbotron > h1 {
     display: block;
     width: 100%;
-    font-size: 44pt;
+    font-size: 36pt;
     margin: 10% auto 40% auto;
     padding: 2%;
     line-height: 105px;
@@ -458,13 +459,6 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.jumbotron > img {
-  width: 100%;
-  height: auto;
-  margin: 0 auto 150px auto !important;
-  z-index: -10;
 }
 
 .marketing .col-lg-4 {
@@ -479,31 +473,15 @@ body {
   margin-left: 10px;
 }
 
-#lego, #circles {
+#lego {
+  margin-top: 80px;
   box-shadow: 4px 4px 10px rgb(50,50,50);
   transition: all .5s ease-in-out;
 }
 
-#circles {
-  margin-top: 40px;
-}
-
-#lego {
-  margin-top: 80px;
-}
-
-#lego:hover, #circles:hover {
+#lego:hover {
   box-shadow: 4px 4px 14px rgb(100,100,100);
   transition: all .5s ease-in-out;
-}
-
-#circles:hover {
-    box-shadow: 4px 4px 14px rgba(0,180,70,.9);
-    animation: rotate;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    transition: all 1s ease-in-out;
 }
 
 /*==================================================*/
@@ -516,7 +494,7 @@ body {
 
 .featurette-divider {
   border-color: rgb(0,0,0);
-  margin: 80px 0 40px 0;
+  margin: 100px 0 40px 0;
 }
 
 .featurette-heading {
@@ -571,6 +549,10 @@ button *:hover, button *:focus {
 
 }
 
+.about-p {
+  font-size: 18px;
+}
+
 #about-close {
   display: none;
   margin: 0 auto;
@@ -609,6 +591,10 @@ button:hover, button:focus {
 
 @media (min-width: 947px) {
   
+  .navbar-wrapper {
+    margin-top: -25px;
+  }
+
   .navbar-nav {
     float: none;
     margin: 0 auto;
@@ -639,8 +625,8 @@ button:hover, button:focus {
     display: block;
     width: 60%;
     font-size: 50pt;
-    margin: 10% auto 0 auto;
-    padding: 2%;
+    margin: 15% auto 0 auto;
+    padding: 0;
     line-height: 105px;
     letter-spacing: 5px;
     text-align: center;

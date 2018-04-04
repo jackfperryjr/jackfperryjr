@@ -1,4 +1,5 @@
 // <-- Created by Jack F. Perry, Jr. -->
+// <--        jackfperryjr.com       -->
 // =====================================
 
 // <-- Setting some variables -->
