@@ -461,6 +461,10 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.jumbotron > h1 > a {
+  text-decoration: none;
+}
+
 .marketing .col-lg-4 {
   margin-bottom: 20px;
   text-align: center;
