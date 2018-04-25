@@ -36,8 +36,7 @@ $(document).ready(function() {
 
 // <-- Adding current year copyright --->
 // ======================================
-let today = new Date()
-let year = today.getFullYear()
+let year = new Date().getFullYear();
 document.getElementById('footer-name').innerHTML = "&copy; " + year + " jack f. perry, jr.";
 // ====================
 // <-- That's that. -->
