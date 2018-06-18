@@ -34,6 +34,12 @@ $(document).ready(function() {
             scrollTop: $("#contact").offset().top},
             'slow');
     });
+
+    $(".test-container").click(function() {
+        $('html,body').animate({
+            scrollTop: $(".navbar-wrapper").offset().top},
+            'slow');
+    });
 });
 
 // <-- Adding current year copyright --->

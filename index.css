@@ -271,54 +271,6 @@
   }
 }
 
-@-webkit-keyframes hvr-hang {
-  0% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-  50% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-  }
-  100% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-}
-@keyframes hvr-hang {
-  0% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-  50% {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
-  }
-  100% {
-    -webkit-transform: translateY(8px);
-    transform: translateY(8px);
-  }
-}
-.hvr-hang {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-animation-duration: 1s, 2s;
-  animation-duration: 1s, 2s;
-  -webkit-animation-delay: 0s, 0s;
-  animation-delay: 0s, 0s;
-  -webkit-animation-timing-function: ease-out, ease-in-out;
-  animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-}
-
 /*================================================*/
 /*     <--- End of animation definitions --->     */
 /*================================================*/
@@ -400,9 +352,9 @@ body {
 .navbar-wrapper {
   position: sticky;
   position: -webkit-sticky;
-  top: 0;
+  top: 32px;
   width: 100%;
-  margin: 50% auto 0 auto;
+  margin: 0 auto 0 auto;
   z-index: 20;
 }
 
@@ -441,6 +393,7 @@ body {
 
 .jumbotron {
   padding: 7% 0;
+  margin: 0;
   background-color: rgb(255,255,255);
   z-index: 100;
 }
@@ -464,6 +417,12 @@ body {
 .jumbotron > h1 > a {
   text-decoration: none;
 }
+#moogle-heading {
+  width: 100%;
+  font-size: 18px;
+  margin: 0 auto 40px auto;
+  background-color: rgb(255,255,255);
+}
 .carousel-container {
   background-color: rgb(255,255,255);
   width: 100%;
@@ -473,7 +432,7 @@ body {
 }
 .carousel-caption {
   text-shadow: none;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bolder;
   border-radius: 5px;
   background-color: rgba(255,255,255,.7);
@@ -490,7 +449,6 @@ body {
   margin-right: 10px;
   margin-left: 10px;
 }
-
 #bg-about {
   background-image: url("images/bamboo.jpg");
   background-attachment: fixed;
@@ -530,19 +488,16 @@ body {
   -webkit-filter: sepia(80%);
   filter: sepia(80%);
 }
-
 #lego-jack {
-  margin-top: 200px;
+  margin-top: 10px;
   border-radius: 50%;
   width: 250px;
 }
-
 #lego:hover,
 #lego:focus {
   -webkit-filter: opacity(100%);
   filter: opacity(100%);
 }
-
 #lego-jack:hover, 
 #lego-jack:focus {
   -webkit-filter: grayscale(0%);
@@ -555,23 +510,16 @@ body {
 /*==================================================*/
 /*      <--- Projects (more customizing) --->      */
 /*==================================================*/
-
-.featurette-divider {
-  margin: 300px 0;
-}
-
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
 }
-
 #social {
   width: 175px;
   position: relative;
   margin: 10px auto 20px auto;
 }
-
 footer{
   width: 100%;
   margin: 0 auto;
@@ -581,16 +529,6 @@ footer{
 #footer-name {
   text-align: center;
 }
-
-button *:hover, 
-button *:focus {
-  color: rgb(255,255,255) !important;
-}
-
-#hand:hover {
-  transform: none;
-}
-
 .fa {
   text-align: center;
   color: rgba(0,0,0,.8);
@@ -607,36 +545,20 @@ button *:focus {
   transition: all .2s ease-in-out;
 }
 .spacer {
-  margin-top: 550px;
+  margin-top: 60px;
 }
 #about {
   background-color: rgba(255,255,255,1);
   border-radius: 5px;
   width: 100%;
-  height: 450px;
+  height: 700px;
   margin: 0 auto;
-  padding: 0 20%;
+  padding: 0 2%;
 }
-
 .about-p {
   background-color: rgba(255,255,255,1);
   font-size: 14px;
 }
-
-button {
-  animation: hvr-hang;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  transition: all .5s ease-in-out;
-}
-
-button:hover, 
-button:focus {
-  color: rgb(255,255,255) !important;
-  background-color: rgba(0,180,70,.9) !important;
-}
-
 #project-open > a {
   text-decoration: none;
   color: rgb(0,0,0);
@@ -644,7 +566,7 @@ button:focus {
 #contact {
   background-color: #fff;
   margin: 0 auto;
-  padding: 0 25% 30px 25%;
+  padding: 0 2% 30px 2%;
   width: 100%;
   border-radius: 5px;
 }
@@ -667,6 +589,11 @@ button:focus {
 .trail-four {
   margin-left: 40%;
 }
+.test-container {
+  background-color: #fff;
+  padding-top: 300px;
+  padding-bottom: 500px;
+}
 
 /*=================================================*/
 /*        <--- End of me making a mess --->        */
@@ -679,9 +606,12 @@ button:focus {
 @media (min-width: 947px) {
   
   .navbar-wrapper {
+    top: 0;
     margin: -520px auto 0 auto;
   }
-
+  .spacer {
+    margin-top: 550px;
+  }
   .navbar-inverse {
     background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
     border: none;
@@ -740,6 +670,18 @@ button:focus {
     filter: blur(2px) grayscale(90%);
     transition: all .7s ease-in-out;
   }
+  #about {
+    background-color: rgba(255,255,255,1);
+    border-radius: 5px;
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    padding: 0 20%;
+  }
+  .about-p {
+    background-color: rgba(255,255,255,1);
+    font-size: 14px;
+  }
   #desktop {
     width: 100%;
   }
@@ -767,11 +709,25 @@ button:focus {
     margin: 0 auto 40px auto;
     background-color: rgb(255,255,255);
   }
+  .carousel-caption {
+    text-shadow: none;
+    font-size: 20px;
+    font-weight: bolder;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,.7);
+    color: rgb(0,0,0);
+  }
 
   .fa {
     font-size: 20px;
   }
-
+  #contact {
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0 25% 30px 25%;
+    width: 100%;
+    border-radius: 5px;
+  }
   #footer-name {
     font-size: 8pt;
     letter-spacing: 5px;
