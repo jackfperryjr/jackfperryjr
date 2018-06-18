@@ -42,11 +42,17 @@ $(document).ready(function() {
             scrollTop: $(".navbar-wrapper").offset().top},
             'slow');
     });
+
+    $("#footer-name").click(function() {
+        $('html,body').animate({
+            scrollTop: $('.test-container').offset().top},
+            'slow');
+    });
 });
 
 // <-- Adding current year copyright --->
 // ======================================
 let year = new Date().getFullYear();
-document.getElementById('footer-name').innerHTML = "&copy; " + year + " jack f. perry, jr.";
+document.getElementById('footer-name').innerHTML = "&copy; " + year + " <a>jack f. perry, jr.</a>";
 // ====================
 // <-- That's that. -->

@@ -396,6 +396,7 @@ body {
   margin: 0;
   background-color: rgb(255,255,255);
   z-index: 100;
+  cursor: pointer;
 }
 
 .jumbotron > h1 {
@@ -531,6 +532,7 @@ footer{
 }
 #footer-name {
   text-align: center;
+  cursor: pointer;
 }
 .fa {
   text-align: center;
@@ -611,6 +613,7 @@ footer{
   .navbar-wrapper {
     top: 0;
     margin: -520px auto 0 auto;
+    cursor: pointer;
   }
   .spacer {
     margin-top: 550px;
