@@ -2,36 +2,38 @@
 // <--        jackfperryjr.com       -->
 // =====================================
 
-// <-- Setting some variables -->
-// ==============================
-const aboutClose = $("#about-close");
-const aboutOpen = $("#about-open");
-const aboutMore = $("#about-more");
-const aboutContent = $("#about-content");
+let bgPictures = [
+    "images/bamboo.jpg",
+    "images/cavern.jpg",
+    "images/icecream.jpg",
+    "images/lanterns.jpg",
+    "images/sakura.jpg"
+]
+
+let randomBgPicture = bgPictures[Math.floor(Math.random()*bgPictures.length)];
+
+$("#bg-about").css("background-image", 'url(' + randomBgPicture +')');
 
 // <-- Hey, DOM, you ready? -->
 // ============================
 $(document).ready(function() {
+    $(".moogle-button").click(function() {
+        $('html,body').animate({
+            scrollTop: $(".carousel-container").offset().top},
+            'slow');
+    });
 
-    // <-- Click function to OPEN more about me -->
-    // ============================================
-    aboutOpen.click(function() {
-        aboutOpen.fadeOut();
-        aboutMore.animate({"height":"250px"});
-        aboutMore.slideDown();
-        aboutClose.delay(1000).fadeIn();
-        aboutContent.slideDown();
-    });  
-    
-    // <-- Click function to CLOSE more about me -->
-    // =============================================
-    aboutClose.click(function() {
-        aboutClose.fadeOut();
-        aboutMore.animate({"height":"0"});
-        aboutMore.slideUp();
-        aboutContent.delay(1000).slideUp();
-        aboutOpen.delay(1000).fadeIn();
-    });   
+    $(".about-button").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#about").offset().top},
+            'slow');
+    });
+
+    $(".contact-button").click(function() {
+        $('html,body').animate({
+            scrollTop: $("#contact").offset().top},
+            'slow');
+    });
 });
 
 // <-- Adding current year copyright --->
