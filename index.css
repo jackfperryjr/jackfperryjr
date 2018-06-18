@@ -367,7 +367,7 @@ body {
   padding-left: 15px;
 }
 .navbar-wrapper .navbar .container {
-  width: auto;
+  width: 100%;
 }
 
 .navbar {
@@ -417,6 +417,10 @@ body {
 .jumbotron > h1 > a {
   text-decoration: none;
 }
+#moogle {
+  width: 100%;
+  margin: 0 auto;
+}
 #moogle-heading {
   width: 100%;
   font-size: 18px;
@@ -450,7 +454,6 @@ body {
   margin-left: 10px;
 }
 #bg-about {
-  background-image: url("images/bamboo.jpg");
   background-attachment: fixed;
   width: 100%;
 }
