@@ -3,11 +3,13 @@
 // =====================================
 
 let bgPictures = [
-    "images/bamboo.jpg",
     "images/cavern.jpg",
     "images/icecream.jpg",
     "images/lanterns.jpg",
-    "images/sakura.jpg"
+    "images/sakura.jpg",
+    "images/mantis.jpg",
+    "images/tunnel.jpg",
+    "images/paper-cranes.jpg"
 ]
 
 let randomBgPicture = bgPictures[Math.floor(Math.random()*bgPictures.length)];
