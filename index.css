@@ -413,7 +413,6 @@ footer{
 }
 #footer-name {
   text-align: center;
-  cursor: pointer;
 }
 .fa {
   text-align: center;
@@ -622,6 +621,9 @@ footer{
   #footer-name {
     font-size: 8pt;
     letter-spacing: 5px;
+  }
+  #my-name {
+    cursor: pointer;
   }
 }
 @media (min-width: 992px) {

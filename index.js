@@ -43,7 +43,7 @@ $(document).ready(function() {
             'slow');
     });
 
-    $("#footer-name").click(function() {
+    $("#my-name").click(function() {
         $('html,body').animate({
             scrollTop: $('.test-container').offset().top},
             'slow');
@@ -53,6 +53,6 @@ $(document).ready(function() {
 // <-- Adding current year copyright --->
 // ======================================
 let year = new Date().getFullYear();
-document.getElementById('footer-name').innerHTML = "&copy; " + year + " <a>jack f. perry, jr.</a>";
+document.getElementById('footer-name').innerHTML = "&copy; " + year + " <a id='my-name'>jack f. perry, jr.</a>";
 // ====================
 // <-- That's that. -->
