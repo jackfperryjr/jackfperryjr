@@ -1,11 +1,9 @@
 /* Created by Jack F. Perry, Jr. */
 /*   <-- jackfperryjr.com -->    */
-
 /*================================================*/
 /*          <--- Defining animations --->         */
 /*     <-- Some borrowed from Animate.css -->     */
 /*================================================*/
-
 @-webkit-keyframes bounceInDown {
   from,
   60%,
@@ -15,35 +13,29 @@
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
-
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, -3000px, 0);
     transform: translate3d(0, -3000px, 0);
   }
-
   60% {
     opacity: 1;
     -webkit-transform: translate3d(0, 25px, 0);
     transform: translate3d(0, 25px, 0);
   }
-
   75% {
     -webkit-transform: translate3d(0, -10px, 0);
     transform: translate3d(0, -10px, 0);
   }
-
   90% {
     -webkit-transform: translate3d(0, 5px, 0);
     transform: translate3d(0, 5px, 0);
   }
-
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
-
 @keyframes bounceInDown {
   from,
   60%,
@@ -53,35 +45,29 @@
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
     animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
-
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, -3000px, 0);
     transform: translate3d(0, -3000px, 0);
   }
-
   60% {
     opacity: 1;
     -webkit-transform: translate3d(0, 25px, 0);
     transform: translate3d(0, 25px, 0);
   }
-
   75% {
     -webkit-transform: translate3d(0, -10px, 0);
     transform: translate3d(0, -10px, 0);
   }
-
   90% {
     -webkit-transform: translate3d(0, 5px, 0);
     transform: translate3d(0, 5px, 0);
   }
-
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
 }
-
 .bounceInDown {
   -webkit-animation-name: bounceInDown;
   animation-name: bounceInDown;
@@ -98,95 +84,22 @@
   -webkit-animation-direction: normal;
   animation-direction: normal;
 }
-
-@-webkit-keyframes jackInTheBox {
-  from {
-    opacity: 0;
-    -webkit-transform: scale(0.1) rotate(30deg);
-    transform: scale(0.1) rotate(30deg);
-    -webkit-transform-origin: center bottom;
-    transform-origin: center bottom;
-  }
-
-  50% {
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg);
-  }
-
-  70% {
-    -webkit-transform: rotate(3deg);
-    transform: rotate(3deg);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-@keyframes jackInTheBox {
-  from {
-    opacity: 0;
-    -webkit-transform: scale(0.1) rotate(30deg);
-    transform: scale(0.1) rotate(30deg);
-    -webkit-transform-origin: center bottom;
-    transform-origin: center bottom;
-  }
-
-  50% {
-    -webkit-transform: rotate(-10deg);
-    transform: rotate(-10deg);
-  }
-
-  70% {
-    -webkit-transform: rotate(3deg);
-    transform: rotate(3deg);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-}
-
-.jackInTheBox {
-  -webkit-animation-name: jackInTheBox;
-  animation-name: jackInTheBox;
-  -webkit-animation-duration: 1s, 2s;
-  animation-duration: 1s, 2s;
-  -webkit-animation-delay: 0s, .3s;
-  animation-delay: 0s, .3s;
-  -webkit-animation-timing-function: ease-out, ease-in-out;
-  animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-}
-
 @-webkit-keyframes lightSpeedIn {
   from {
     -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
     transform: translate3d(100%, 0, 0) skewX(-30deg);
     opacity: 0;
   }
-
   60% {
     -webkit-transform: skewX(20deg);
     transform: skewX(20deg);
     opacity: 1;
   }
-
   80% {
     -webkit-transform: skewX(-5deg);
     transform: skewX(-5deg);
     opacity: 1;
   }
-
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -197,37 +110,32 @@
     transform: rotate(7deg);
   }
 }
-
 @keyframes lightSpeedIn {
   from {
     -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
     transform: translate3d(100%, 0, 0) skewX(-30deg);
     opacity: 0;
   }
-
   60% {
     -webkit-transform: skewX(20deg);
     transform: skewX(20deg);
     opacity: 1;
   }
-
   80% {
     -webkit-transform: skewX(-5deg);
     transform: skewX(-5deg);
     opacity: 1;
   }
-
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     opacity: 1;
   }
   100% {
-    -webkit-transform: rotate(7deg);
-    transform: rotate(7deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
-
 .lightSpeedIn {
   -webkit-animation-name: lightSpeedIn;
   animation-name: lightSpeedIn;
@@ -246,67 +154,55 @@
   -webkit-animation-direction: normal;
   animation-direction: normal;
 }
-
 @keyframes rotate {
   from {transform: rotate(0deg);}
   to {transform: rotate(360deg);}
 }
-
 @-webkit-keyframes rotate {
   from {transform: rotate(0deg);}
   to {transform: rotate(360deg);}
 }
-
 @keyframes tilt {
   100% {
     -webkit-transform: rotate(7deg);
     transform: rotate(7deg);
   }
 }
-
 @-webkit-keyframes tilt {
   100% {
     -webkit-transform: rotate(7deg);
     transform: rotate(7deg);
   }
 }
-
 /*================================================*/
 /*     <--- End of animation definitions --->     */
 /*================================================*/
-
 /*=================================================*/
 /*     <--- Tweaking a few global styles --->      */
 /*=================================================*/
-
 body {
   color: rgb(0,0,0);
   background-color: rgba(255,255,255,1);
   font-family: 'Raleway', Helvetica, Verdana, Arial;
 }
-
 /*==================================================*/
 /*    <--- Customizing the Bootstrap navbar --->    */
 /*==================================================*/
-
 .navbar-inverse .navbar-brand {
-  background-color: rgba(255,255,255,0);
+  background-color: rgba(255,255,255,.0);
   color: rgb(0,0,0) !important;
   transition: all .5s ease-in-out;
 }
-
 .navbar-inverse .navbar-nav > li > a {
   border-radius: 5px;
-  background-color: rgba(255,255,255,0);
+  background-color: rgba(255,255,255,.0);
   color: rgb(0,0,0) !important;
   transition: all .5s ease-in-out;
 }
-
 .navbar-inverse .navbar-nav > .dropdown > a .caret {
-  background-color: rgba(255,255,255,0);
+  background-color: rgba(255,255,255,.0);
   transition: all .5s ease-in-out;
 }
-
 .navbar-inverse .navbar-nav > .dropdown > a:hover .caret,
 .navbar-inverse .navbar-nav > .dropdown > a:focus .caret {
   border: none;
@@ -314,7 +210,6 @@ body {
   background-color: rgba(0,180,70,.7);
   transition: all .5s ease-in-out;
 }
-
 .navbar-inverse .navbar-nav > .dropdown > a:hover,
 .navbar-inverse .navbar-nav > .dropdown > a:focus {
   background-color: rgba(0,180,70,.7);
@@ -322,7 +217,6 @@ body {
   transition: all .5s ease-in-out;
   z-index: 100;
 }
-
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
   border-radius: 5px;
@@ -331,7 +225,6 @@ body {
   transition: all .5s ease-in-out;
   z-index: 100;
 }
-
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
@@ -340,7 +233,6 @@ body {
   transition: all .5s ease-in-out;
   z-index: 100;
 }
-
 .navbar-inverse .navbar-nav > .dropdown .active,
 .navbar-inverse .navbar-nav > .dropdown .active,
 .navbar-inverse .navbar-nav > .dropdown .active {
@@ -348,7 +240,6 @@ body {
   transition: all .5s ease-in-out;
   z-index: 100;
 }
-
 .navbar-wrapper {
   position: sticky;
   position: -webkit-sticky;
@@ -357,7 +248,6 @@ body {
   margin: 0 auto 0 auto;
   z-index: 20;
 }
-
 .navbar-wrapper > .container {
   padding-right: 0;
   padding-left: 0;
@@ -369,28 +259,22 @@ body {
 .navbar-wrapper .navbar .container {
   width: 100%;
 }
-
 .navbar {
   margin-bottom: 0;
 }
-
 .navbar-inverse {
-  background-color: rgb(255,255,255);
+  background-color: rgba(255,255,255,.8);
   border: none;
 }
-
 .navbar-inverse .navbar-toggle .icon-bar {
     background-color: rgb(0,0,0);
 }
-
 /*==================================================*/
 /*   <--- Whoa that's a lot of customization --->   */
 /*==================================================*/
-
 /*=================================================*/
 /*   <--- Some more Bootstrap customization --->   */
 /*=================================================*/
-
 .jumbotron {
   padding: 7% 0;
   margin: 0;
@@ -398,7 +282,6 @@ body {
   z-index: 100;
   cursor: pointer;
 }
-
 .jumbotron > h1 {
     display: block;
     width: 100%;
@@ -414,7 +297,6 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .jumbotron > h1 > a {
   text-decoration: none;
 }
@@ -458,10 +340,11 @@ body {
   background-attachment: fixed;
   width: 100%;
 }
-
 #lego, 
 #lego-jack {
-  margin-top: 80px;
+  margin-top: 40px;
+  border-radius: 50%;
+  width: 200px;
   box-shadow: 4px 4px 10px rgb(50,50,50);
   transition: all .5s ease-in-out;
 }
@@ -472,30 +355,25 @@ body {
   -webkit-filter: opacity(80%);
   filter: opacity(80%);
 }
-
 .blur {
   -webkit-filter: blur(3px);
   filter: blur(3px);
 }
-
 .black-and-white {
   -webkit-filter: grayscale(90%);
   filter: grayscale(90%);
 }
-
 .saturate {
   -webkit-filter: saturate(1.5);
   filter: saturate(1.5);
 }
-
 .sepia {
   -webkit-filter: sepia(80%);
   filter: sepia(80%);
 }
 #lego-jack {
-  margin-top: 10px;
-  border-radius: 50%;
   width: 250px;
+  margin-top: 10px;
 }
 #lego:hover,
 #lego:focus {
@@ -543,7 +421,6 @@ footer{
   border-radius: 10%;
   transition: all .2s ease-in-out;
 }
-
 .fa:hover {
   color: rgba(0,0,0,1);
   transform: scale(1.20);
@@ -581,8 +458,8 @@ footer{
 .trail-four {
   background-color: rgb(255,255,255);
   margin: 2% 0 2% 25%;
-  height: 20px;
-  width: 5px;
+  height: 15px;
+  width: 2px;
   position: relative;
 }
 .trail-two {
@@ -599,20 +476,16 @@ footer{
   padding-top: 100px;
   padding-bottom: 500px;
 }
-
 /*=================================================*/
 /*        <--- End of me making a mess --->        */
 /*=================================================*/
-
 /*==================================================*/
 /*     <--- Media query-ing responsy-stuff --->     */
 /*==================================================*/
-
-@media (min-width: 947px) {
-  
+@media (min-width: 947px) {  
   .navbar-wrapper {
     top: 0;
-    margin: -520px auto 0 auto;
+    margin: -510px auto 0 auto;
     cursor: pointer;
   }
   .spacer {
@@ -622,29 +495,24 @@ footer{
     background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
     border: none;
   }
-
   .navbar-nav {
     float: none;
     margin: 0 auto;
     display: block;
     text-align: center;
   }
-
   .navbar-nav > li {
     display: inline-block;
     float: none;
   }
-
   .navbar-wrapper .container {
     padding-right: 15px;
     padding-left: 15px;
   }
-
   .navbar-wrapper .navbar {
     padding-right: 0;
     padding-left: 0;
   }
-
   .test-container {
     background-color: #fff;
     padding-top: 300px;
@@ -653,7 +521,6 @@ footer{
   .jumbotron {
     padding: 0;
   }
-  
   .jumbotron > h1 {
     display: block;
     width: 60%;
@@ -670,11 +537,29 @@ footer{
     -webkit-text-fill-color: transparent;
     transition: all .7s ease-in-out;
   }
-
   .jumbotron > h1:hover {
     -webkit-filter: blur(2px) grayscale(90%);
     filter: blur(2px) grayscale(90%);
     transition: all .7s ease-in-out;
+  }
+  .trail-one,
+  .trail-two,
+  .trail-three,
+  .trail-four {
+    background-color: rgb(255,255,255);
+    margin: 2% 0 2% 25%;
+    height: 20px;
+    width: 5px;
+    position: relative;
+  }
+  .trail-two {
+    margin-left: 75%;
+  }
+  .trail-three {
+    margin-left: 55%;
+  }
+  .trail-four {
+    margin-left: 40%;
   }
   #about {
     background-color: rgba(255,255,255,1);
@@ -691,19 +576,15 @@ footer{
   #desktop {
     width: 100%;
   }
-
   #lego-jack {
     margin-top: 80px;
   }
-  
   .col-lg-4 {
     width: 50%;
   }
-
   .featurette-heading {
     font-size: 20px;
   }
-
   #moogle {
     background-color: rgb(255,255,255);
     border-radius: 5px;
@@ -723,7 +604,6 @@ footer{
     background-color: rgba(255,255,255,.7);
     color: rgb(0,0,0);
   }
-
   .fa {
     font-size: 20px;
   }
@@ -739,13 +619,11 @@ footer{
     letter-spacing: 5px;
   }
 }
-
 @media (min-width: 992px) {
   .featurette-heading {
     margin-top: 60px;
   }
 }
-
 /*=================================================*/
 /*           <--- That's all, folks --->           */
 /*=================================================*/
