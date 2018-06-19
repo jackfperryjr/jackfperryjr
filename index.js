@@ -21,7 +21,7 @@ $("#bg-about").css("background-image", 'url(' + randomBgPicture +')');
 $(document).ready(function() {
     $(".moogle-button").click(function() {
         $('html,body').animate({
-            scrollTop: $(".carousel-container").offset().top},
+            scrollTop: $(".moogle-container").offset().top},
             'slow');
     });
 

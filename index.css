@@ -300,6 +300,9 @@ body {
 .jumbotron > h1 > a {
   text-decoration: none;
 }
+.modal-body {
+  padding: 0;
+}
 #moogle {
   width: 100%;
   margin: 0 auto;
@@ -310,7 +313,7 @@ body {
   margin: 0 auto 40px auto;
   background-color: rgb(255,255,255);
 }
-.carousel-container {
+.moogle-container {
   background-color: rgb(255,255,255);
   width: 100%;
   border-radius: 5px;
@@ -437,14 +440,6 @@ footer{
   margin: 0 auto;
   padding: 0 2%;
 }
-.about-p {
-  background-color: rgba(255,255,255,1);
-  font-size: 14px;
-}
-#project-open > a {
-  text-decoration: none;
-  color: rgb(0,0,0);
-}
 #contact {
   background-color: #fff;
   margin: 0 auto;
@@ -476,6 +471,10 @@ footer{
   padding-top: 100px;
   padding-bottom: 500px;
 }
+.row-modified {
+  margin: 0 auto;
+  padding: 0;
+}
 /*=================================================*/
 /*        <--- End of me making a mess --->        */
 /*=================================================*/
@@ -490,6 +489,9 @@ footer{
   }
   .spacer {
     margin-top: 550px;
+  }
+  .row-modified {
+    padding: 70px 10%;
   }
   .navbar-inverse {
     background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
@@ -567,7 +569,7 @@ footer{
     width: 100%;
     height: 450px;
     margin: 0 auto;
-    padding: 0 20%;
+    padding: 50px 20%;
   }
   .about-p {
     background-color: rgba(255,255,255,1);
@@ -588,8 +590,11 @@ footer{
   #moogle {
     background-color: rgb(255,255,255);
     border-radius: 5px;
-    max-width: 75%;
-    margin: 20px auto;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  #moogle-container {
+    padding: 8% 0 5% 0;
   }
   #moogle-heading {
     width: 75%;
