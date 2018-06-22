@@ -482,7 +482,7 @@ footer{
     margin-top: 550px;
   }
   .row-modified {
-    padding: 180px 10% 0 10%;
+    padding: 180px 0 0 0;
   }
   .navbar-inverse {
     background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
@@ -587,7 +587,7 @@ footer{
   #moogle-container {
     padding: 8% 0 5% 0;
   }
-  #moogle-heading {
+  .moogle-heading {
     width: 75%;
     margin: 0 auto 40px auto;
     background-color: rgb(255,255,255);

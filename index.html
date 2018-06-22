@@ -60,7 +60,9 @@
                 <li><a class="contact-button"><strong>&lt; contact &gt;</strong></a></li>
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>&lt; links &gt;</strong></a>
-                  <ul class="dropdown-menu">
+                  <ul class="dropdown-menu">                    
+                    <li><a href="https://github.com/jackfperryjr/moogle" target="_blank">moogle</a></li>
+                    <li><a href="https://github.com/jackfperryjr/sephiroth" target="_blank">sephiroth</a></li>
                     <li><a href="http://considerboutique.com/" target="_blank">considerboutique.com</a></li>
                     <li><a href="https://jackfperryjr.github.io/final-fantasy-angularjs/" target="_blank">final fantasy compendium</a></li>
                     <li><a href="https://jackfperryjr.github.io/resume/" target="_blank">my resumé on the web</a></li>
@@ -91,7 +93,7 @@
       <!-- Stuff under the header-like thing. -->
         <div id="about" class="row featurette">
           <div class="col-md-7">
-            <h2 class="featurette-heading">About Me<br/><span class="text-muted">Jack F. Perry, Jr.</span></h2>
+            <h1>About Me<br/><span class="text-muted"><h2>Jack F. Perry, Jr.</h2></span></h1>
             <p class="about-p">From Metroid to Final Fantasy to DragonRealms to Skyrim to here! You found me.</p>
             <p>I graduated with an Associate's in Applied Sciences (Computer Programming). I'm also a graduate of Code Louisville in both Front End Web Develeopment and C#/.NET. Learning is a passion of mine and I continue to teach myself new programming languages, technologies, and best practices on a daily basis!
             </p>
@@ -116,17 +118,35 @@
       <!-- Start of Moogle section. -->
       <div class="moogle-container">
         <div class="row row-modified">
-          <div class="col-md-4 text-center">
-            <h2 id="moogle-heading" class="featurette-heading text-left">Moogle is a single page application (SPA) I've built using an API I've also built and is managed with an MVC that I, again, built. (I like this stuff!). I've put together a little slideshow below for your viewing pleasure, since at this moment, it's not yet live. Take a look.</h2>
+          <div class="col-md-3 text-center">
+            <h1>Moogle</h1>
+          </div>
+          <div class="col-md-3 text-center">
+            <h1>Final Fantasy Compendium</h1>
+          </div>
+          <div class="col-md-3 text-center">
+            <h1>Consider Boutique</h1>
+          </div>
+          <div class="col-md-3 text-center">
+            <h1>Sephiroth</h1>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 text-center">
+            <h2 class="featurette-heading moogle-heading text-left">Moogle is a single page application (SPA) I've built using an API I've also built and is managed with an MVC that I, again, built. (I like this stuff!). I've put together a little slideshow below for your viewing pleasure, since at this moment, it's not yet live. Take a look.</h2>
             <a class="text-center" data-toggle="modal" href="#moogleModal"><img style="width: 200px;margin: 0 auto 20px auto;" src="images/moogle/moogle-02.png"></a>
           </div>
-          <div class="col-md-4 text-center">
-              <h2 id="moogle-heading" class="featurette-heading text-left">The Final Fantasy Compendium was my first Code Louisville FEWD project. It's pretty simple but it does use a wee bit of AngularJs. Check it out!</h2>
+          <div class="col-md-3 text-center">
+              <h2 class="featurette-heading moogle-heading text-left">The Final Fantasy Compendium was my first Code Louisville FEWD project. It's pretty simple but it does use a wee bit of AngularJs. Check it out!</h2>
               <a class="text-center" data-toggle="modal" href="#ffcompModal"><img style="width: 200px;margin: 0 auto 20px auto;" src="images/ff-comp/ff-comp.png"></a>
           </div>
-          <div class="col-md-4 text-center">
-              <h2 id="moogle-heading" class="featurette-heading text-left">Consider Boutique is a local business that I worked with to migrate their webhosting from one service to another. In the process, I noted and recommended a redesign. They agreed and asked if I could help them out. It was a small redesign utilizing mostly CSS and Bootstrap.</h2>
+          <div class="col-md-3 text-center">
+              <h2 class="featurette-heading moogle-heading text-left">Consider Boutique is a local business that I worked with to migrate their webhosting from one service to another. In the process, I noted and recommended a redesign. They agreed and asked if I could help them out. It was a small redesign utilizing mostly CSS and Bootstrap.</h2>
               <a class="text-center" data-toggle="modal" href="#considerModal"><img style="width: 200px;margin: 0 auto 20px auto;" src="images/consider/consider.png"></a>
+          </div>
+          <div class="col-md-3 text-center">
+              <h2 class="featurette-heading moogle-heading text-left">Sephiroth is the repository name for a time off request application I've titled Zenith; it's a work in progress. Currently there's three users in the database with different roles and can access different things based on those roles. At the moment it's still just using the stock Bootstrap styling.</h2>
+              <a class="text-center" data-toggle="modal" href="#sephirothModal"><img style="width: 200px;margin: 0 auto 20px auto;" src="images/sephiroth/sephiroth.png"></a>
           </div>
         </div>
         <div class="modal fade" id="ffcompModal" tabindex="-1" role="dialog">
@@ -239,9 +259,6 @@
                       </div>
                       <div class="item">
                         <img src="images/moogle/sign-in-edit.png" alt="Character edit page.">
-                        <div class="carousel-caption">
-                          <p>Edit button takes you to the edit character page.</p>
-                        </div>
                       </div>
                       <div class="item">
                         <img src="images/moogle/sign-in-delete.png" alt="Character delete page.">
@@ -254,6 +271,55 @@
                       <span class="sr-only">Previous</span>
                     </a>
                     <a class="right carousel-control" href="#moogleCarousel" data-slide="next">
+                      <span class="glyphicon glyphicon-chevron-right"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="sephirothModal" tabindex="-1" role="dialog">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content text-center">
+              <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal"><img style="width: 100px;margin: 0 auto;" src="images/sephiroth/sephiroth.png"> X</button>
+              </div>
+              <div class="modal-body">
+                  <div id="sephirothCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- ============================================================ -->
+                    <!-- Rappers (Yes, rappers. But not gangsta rappers.) for slides. -->
+                    <div class="carousel-inner shadow">
+                      <div class="item active">
+                        <img src="images/sephiroth/homepage.png" alt="Boring .NET Bootstrap homepage.">
+                      </div>
+                      <div class="item">
+                        <img src="images/sephiroth/sign-in.png" alt="Boring .NET Bootstrap sign in.">
+                      </div>
+                      <div class="item">
+                        <img src="images/sephiroth/admin-index.png" alt="Admin view of the index.">
+                      </div>
+                      <div class="item">
+                        <img src="images/sephiroth/admin-details.png" alt="Admin view of request details.">
+                      </div>
+                      <div class="item">
+                        <img src="images/sephiroth/test-index.png" alt="Test user view of index.">
+                      </div>
+                      <div class="item">
+                        <img src="images/sephiroth/test-create.png" alt="Test user view of create request.">
+                      </div>
+                      <div class="item">
+                        <img src="images/sephiroth/test-details.png" alt="Test user view of request details.">
+                      </div>
+                    </div>
+                    <!-- ======================== -->
+                    <!-- Left and right controls. -->
+                    <a class="left carousel-control" href="#sephirothCarousel" data-slide="prev">
+                      <span class="glyphicon glyphicon-chevron-left"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#sephirothCarousel" data-slide="next">
                       <span class="glyphicon glyphicon-chevron-right"></span>
                       <span class="sr-only">Next</span>
                     </a>
@@ -277,7 +343,7 @@
       <!-- Contact info! Contact me! -->
       <div id="contact" class="row featurette">
         <div class="col-md-12">
-          <h2 class="featurette-heading">If you'd like to work with me: <br/><span class="text-muted">Contact me!</span></h2>
+          <h2>If you'd like to work with me: <br/><span class="text-muted"><h1>Contact me!</h1></span></h2>
           <p class="lead">+1.502.644.6855<br>
           <a href="mailto:jack.franklin.perryjr@gmail.com">jack.franklin.perryjr@gmail.com</a></p>
         </div>
