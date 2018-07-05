@@ -365,10 +365,6 @@ body {
   -webkit-filter: sepia(80%);
   filter: sepia(80%);
 }
-#lego-jack {
-  width: 250px;
-  margin-top: 10px;
-}
 #lego:hover,
 #lego:focus {
   -webkit-filter: opacity(100%);
@@ -484,7 +480,9 @@ footer{
     margin-top: 550px;
   }
   .row-modified {
-    padding: 180px 0 0 0;
+    padding: 180px 50px 0 50px;
+    border-right: 2px solid rgba(0,0,0,.1);
+    border-left: 2px solid rgba(0,0,0,.1);
   }
   .navbar-inverse {
     background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
@@ -562,7 +560,9 @@ footer{
     width: 100%;
     height: auto;
     margin: 0 auto;
-    padding: 50px 20%;
+    padding: 50px 300px;
+    border-right: 4px solid rgb(0,0,0);
+    border-left: 4px solid rgb(0,0,0);
   }
   .about-p {
     background-color: rgba(255,255,255,1);
@@ -573,6 +573,7 @@ footer{
   }
   #lego-jack {
     margin-top: 80px;
+    width: 300px;
   }
   .col-lg-4 {
     width: 50%;
