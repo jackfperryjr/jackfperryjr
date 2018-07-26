@@ -483,6 +483,7 @@ footer{
     padding: 180px 50px 0 50px;
     border-right: 2px solid rgba(0,0,0,.1);
     border-left: 2px solid rgba(0,0,0,.1);
+    width: 100%;
   }
   .navbar-inverse {
     background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
