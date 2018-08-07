@@ -1,623 +1,473 @@
-/* Created by Jack F. Perry, Jr. */
-/*   <-- jackfperryjr.com -->    */
-/*================================================*/
-/*          <--- Defining animations --->         */
-/*     <-- Some borrowed from Animate.css -->     */
-/*================================================*/
+/* Importing Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+/* Defining some animations */
+@-webkit-keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@keyframes hvr-hang {
+  0% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  50% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@-webkit-keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+@keyframes hvr-hang-sink {
+  100% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+}
+.hvr-hang {
+  -webkit-animation-name: hvr-hang;
+  animation-name: hvr-hang;
+  -webkit-animation-duration: 2s, 3s;
+  animation-duration: 2s, 3s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+}
 @-webkit-keyframes bounceInDown {
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -3000px, 0);
+      transform: translate3d(0, -3000px, 0);
+    }
+  
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 25px, 0);
+      transform: translate3d(0, 25px, 0);
+    }
+  
+    75% {
+      -webkit-transform: translate3d(0, -10px, 0);
+      transform: translate3d(0, -10px, 0);
+    }
+  
+    90% {
+      -webkit-transform: translate3d(0, 5px, 0);
+      transform: translate3d(0, 5px, 0);
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
   }
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -3000px, 0);
-    transform: translate3d(0, -3000px, 0);
+  @keyframes bounceInDown {
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -3000px, 0);
+      transform: translate3d(0, -3000px, 0);
+    }
+    60% {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 25px, 0);
+      transform: translate3d(0, 25px, 0);
+    }
+    75% {
+      -webkit-transform: translate3d(0, -10px, 0);
+      transform: translate3d(0, -10px, 0);
+    }
+    90% {
+      -webkit-transform: translate3d(0, 5px, 0);
+      transform: translate3d(0, 5px, 0);
+    }
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
   }
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 25px, 0);
-    transform: translate3d(0, 25px, 0);
+  .bounceInDown {
+    -webkit-animation-name: bounceInDown;
+    animation-name: bounceInDown;
+    -webkit-animation-duration: 1s, 2s;
+    animation-duration: 1s, 2s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
   }
-  75% {
-    -webkit-transform: translate3d(0, -10px, 0);
-    transform: translate3d(0, -10px, 0);
+  @keyframes lightSpeedIn {
+    from {
+      -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
+      transform: translate3d(100%, 0, 0) skewX(-30deg);
+      opacity: 0;
+    }
+    60% {
+      -webkit-transform: skewX(20deg);
+      transform: skewX(20deg);
+      opacity: 1;
+    }
+    80% {
+      -webkit-transform: skewX(-5deg);
+      transform: skewX(-5deg);
+      opacity: 1;
+    }
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
   }
-  90% {
-    -webkit-transform: translate3d(0, 5px, 0);
-    transform: translate3d(0, 5px, 0);
+  .lightSpeedIn {
+    -webkit-animation-name: lightSpeedIn;
+    animation-name: lightSpeedIn;
+    -webkit-animation-duration: 1s, 2s;
+    animation-duration: 1s, 2s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
   }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+  @-webkit-keyframes lightSpeedOut {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+      transform: translate3d(100%, 0, 0) skewX(30deg);
+      opacity: 0;
+    }
   }
-}
-@keyframes bounceInDown {
-  from,
-  60%,
-  75%,
-  90%,
-  to {
-    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  
+  @keyframes lightSpeedOut {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      -webkit-transform: translate3d(100%, 0, 0) skewX(30deg);
+      transform: translate3d(100%, 0, 0) skewX(30deg);
+      opacity: 0;
+    }
   }
-  0% {
-    opacity: 0;
-    -webkit-transform: translate3d(0, -3000px, 0);
-    transform: translate3d(0, -3000px, 0);
+  .lightSpeedOut {
+    -webkit-animation-name: lightSpeedOut;
+    animation-name: lightSpeedOut;
+    -webkit-animation-duration: 1s, 2s;
+    animation-duration: 1s, 2s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
   }
-  60% {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 25px, 0);
-    transform: translate3d(0, 25px, 0);
+  @-webkit-keyframes tada {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+    10%,
+    20% {
+      -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+      transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+    40%,
+    60%,
+    80% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
   }
-  75% {
-    -webkit-transform: translate3d(0, -10px, 0);
-    transform: translate3d(0, -10px, 0);
+  @keyframes tada {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+    10%,
+    20% {
+      -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+      transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    }
+    30%,
+    50%,
+    70%,
+    90% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    }
+    40%,
+    60%,
+    80% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+      transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    }
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
   }
-  90% {
-    -webkit-transform: translate3d(0, 5px, 0);
-    transform: translate3d(0, 5px, 0);
+  .tada {
+    -webkit-animation-name: tada;
+    animation-name: tada;
+    -webkit-animation-duration: 1s, 2s;
+    animation-duration: 1s, 2s;
+    -webkit-animation-delay: 0s, .3s;
+    animation-delay: 0s, .3s;
+    -webkit-animation-timing-function: ease-out, ease-in-out;
+    animation-timing-function: ease-out, ease-in-out;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
   }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
-.bounceInDown {
-  -webkit-animation-name: bounceInDown;
-  animation-name: bounceInDown;
-  -webkit-animation-duration: 1s, 2s;
-  animation-duration: 1s, 2s;
-  -webkit-animation-delay: 0s, .3s;
-  animation-delay: 0s, .3s;
-  -webkit-animation-timing-function: ease-out, ease-in-out;
-  animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-}
-@-webkit-keyframes lightSpeedIn {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
-    transform: translate3d(100%, 0, 0) skewX(-30deg);
-    opacity: 0;
-  }
-  60% {
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    opacity: 1;
-  }
-  80% {
-    -webkit-transform: skewX(-5deg);
-    transform: skewX(-5deg);
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: rotate(7deg);
-    transform: rotate(7deg);
-  }
-}
-@keyframes lightSpeedIn {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0) skewX(-30deg);
-    transform: translate3d(100%, 0, 0) skewX(-30deg);
-    opacity: 0;
-  }
-  60% {
-    -webkit-transform: skewX(20deg);
-    transform: skewX(20deg);
-    opacity: 1;
-  }
-  80% {
-    -webkit-transform: skewX(-5deg);
-    transform: skewX(-5deg);
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-  100% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-}
-.lightSpeedIn {
-  -webkit-animation-name: lightSpeedIn;
-  animation-name: lightSpeedIn;
-  -webkit-animation-timing-function: ease-out;
-  animation-timing-function: ease-out;
-  -webkit-animation-duration: 1s, 2s;
-  animation-duration: 1s, 2s;
-  -webkit-animation-delay: 0s, .3s;
-  animation-delay: 0s, .3s;
-  -webkit-animation-timing-function: ease-out, ease-in-out;
-  animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-}
-@keyframes rotate {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
-}
-@-webkit-keyframes rotate {
-  from {transform: rotate(0deg);}
-  to {transform: rotate(360deg);}
-}
-@keyframes tilt {
-  100% {
-    -webkit-transform: rotate(7deg);
-    transform: rotate(7deg);
-  }
-}
-@-webkit-keyframes tilt {
-  100% {
-    -webkit-transform: rotate(7deg);
-    transform: rotate(7deg);
-  }
-}
-/*================================================*/
-/*     <--- End of animation definitions --->     */
-/*================================================*/
-/*=================================================*/
-/*     <--- Tweaking a few global styles --->      */
-/*=================================================*/
+/* Modifying HTML elements */
 body {
-  color: rgb(0,0,0);
-  background-color: rgba(255,255,255,1);
-  font-family: 'Raleway', Helvetica, Verdana, Arial;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  font-family: "Raleway";
+  font-size: 16px;
 }
-/*==================================================*/
-/*    <--- Customizing the Bootstrap navbar --->    */
-/*==================================================*/
-.navbar-inverse .navbar-brand {
-  background-color: rgba(255,255,255,.0);
-  color: rgb(0,0,0) !important;
-  transition: all .5s ease-in-out;
+h1 {
+  cursor: default;
 }
-.navbar-inverse .navbar-nav > li > a {
-  border-radius: 5px;
-  background-color: rgba(255,255,255,.0);
-  color: rgb(0,0,0) !important;
-  transition: all .5s ease-in-out;
-}
-.navbar-inverse .navbar-nav > .dropdown > a .caret {
-  background-color: rgba(255,255,255,.0);
-  transition: all .5s ease-in-out;
-}
-.navbar-inverse .navbar-nav > .dropdown > a:hover .caret,
-.navbar-inverse .navbar-nav > .dropdown > a:focus .caret {
-  border: none;
-  border-radius: 5px;
-  background-color: rgba(0,180,70,.7);
-  transition: all .5s ease-in-out;
-}
-.navbar-inverse .navbar-nav > .dropdown > a:hover,
-.navbar-inverse .navbar-nav > .dropdown > a:focus {
-  background-color: rgba(0,180,70,.7);
-  box-shadow: 2px 2px 10px rgb(0,0,0);
-  transition: all .5s ease-in-out;
-  z-index: 100;
-}
-.navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-nav > li > a:focus {
-  border-radius: 5px;
-  background-color: rgba(0,180,70,.7);
-  box-shadow: 2px 2px 10px rgb(0,0,0);
-  transition: all .5s ease-in-out;
-  z-index: 100;
-}
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-inverse .navbar-nav > .active > a:focus {
-  border-radius: 5px;
-  background-color: rgba(0,180,70,.7);
-  transition: all .5s ease-in-out;
-  z-index: 100;
-}
-.navbar-inverse .navbar-nav > .dropdown .active,
-.navbar-inverse .navbar-nav > .dropdown .active,
-.navbar-inverse .navbar-nav > .dropdown .active {
-  background-color: rgba(0,180,70,.7);
-  transition: all .5s ease-in-out;
-  z-index: 100;
-}
-.navbar-wrapper {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 0;
-  width: 100%;
-  margin: 0 auto 0 auto;
-  z-index: 20;
-}
-.navbar-wrapper > .container {
-  padding-right: 0;
-  padding-left: 0;
-}
-.navbar-wrapper .navbar {
-  padding-right: 15px;
-  padding-left: 15px;
-}
-.navbar-wrapper .navbar .container {
-  width: 100%;
-}
-.navbar {
-  margin-bottom: 0;
-}
-.navbar-inverse {
-  background-color: rgba(255,255,255,.8);
-  border: none;
-}
-.navbar-inverse .navbar-toggle .icon-bar {
-    background-color: rgb(0,0,0);
-}
-/*==================================================*/
-/*   <--- Whoa that's a lot of customization --->   */
-/*==================================================*/
-/*=================================================*/
-/*   <--- Some more Bootstrap customization --->   */
-/*=================================================*/
-.jumbotron {
-  padding: 7% 0;
-  margin: 0;
-  background-color: rgb(255,255,255);
-  z-index: 100;
-  cursor: pointer;
-}
-.jumbotron > h1 {
-    display: block;
-    width: 100%;
-    font-size: 36pt;
-    margin: 0 auto;
-    padding: 2%;
-    line-height: 105px;
-    letter-spacing: 5px;
-    text-align: center;
-    border: none;
-    background: -webkit-linear-gradient(rgba(0,0,255,1), rgba(0,0,255,.2));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-.jumbotron > h1 > a {
-  text-decoration: none;
-}
-.modal-body {
-  padding: 0;
-}
-#moogle {
-  width: 100%;
-  margin: 0 auto;
-}
-#moogle-heading {
-  width: 100%;
-  font-size: 18px;
-  margin: 0 auto 40px auto;
-  background-color: rgb(255,255,255);
-}
-.moogle-container {
-  background-color: rgb(255,255,255);
-  width: 100%;
-  border-radius: 5px;
-  margin: 0;
-  padding: 3% 0;
-}
-.marketing .col-lg-4 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-.marketing h2 {
-  font-weight: normal;
-}
-.marketing .col-lg-4 p {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-#bg-about {
-  background-attachment: fixed;
-  width: 100%;
-}
-#lego-jack {
-  margin-top: 40px;
-  border-radius: 50%;
-  width: 200px;
-  box-shadow: 4px 4px 10px rgb(50,50,50);
-  transition: all .5s ease-in-out;
-}
-.shadow {
-  box-shadow: 4px 4px 10px rgb(50,50,50);
-}
-.opaque {
-  -webkit-filter: opacity(80%);
-  filter: opacity(80%);
-}
-.blur {
-  -webkit-filter: blur(3px);
-  filter: blur(3px);
-}
-.black-and-white {
-  -webkit-filter: grayscale(90%);
-  filter: grayscale(90%);
-}
-.saturate {
-  -webkit-filter: saturate(1.5);
-  filter: saturate(1.5);
-}
-.sepia {
-  -webkit-filter: sepia(80%);
-  filter: sepia(80%);
-}
-#lego:hover,
-#lego:focus {
-  -webkit-filter: opacity(100%);
-  filter: opacity(100%);
-}
-#lego-jack:hover, 
-#lego-jack:focus {
-  -webkit-filter: grayscale(0%);
-  filter: grayscale(0%);
-}
-/*==================================================*/
-/*  <--- Whoa that's a lot more customization --->  */
-/*==================================================*/
 
-/*==================================================*/
-/*      <--- Projects (more customizing) --->      */
-/*==================================================*/
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -1px;
+i {
+  color: #4285F4;
+  padding-left: 10px;
+  font-size: 24px;
 }
-#social {
-  width: 175px;
-  position: relative;
-  margin: 10px auto 20px auto;
+i:hover,
+i:focus {
+  color: #9933CC;
+  transform: rotate(7deg);
 }
-footer{
-  width: 100%;
+/* Styling Moogle title */
+.site-title {
+  font-size: 6em;
+}
+.no-space {
+  letter-spacing: -35px;
+}
+.black {
+  color: #000;
+}
+.blue {
+  color: #4285F4;
+}
+.yellow {
+  color: #ffbb33;
+}
+.red {
+  color: #CC0000;
+}
+.green {
+  color: #007E33;
+}
+.purple {
+  color: #9933CC;
+}
+/* Spacer classes */
+.top-buffer {
+  margin-top: 40px;
+}
+.bottom-buffer {
+  margin-bottom: 40px;
+}
+.mix-buffer {
+  margin: 40px 0;
+}
+.padded-left {
+  padding-left: 50px;
+}
+.close-modified {
+  margin: 10px;
+}
+/* Search card */
+.search-card {
   margin: 0 auto;
-  padding: 40px 10%;
-  background-color: #fff;
+  width: 50%;
+  height: 80px;
 }
-#footer-name {
+input[type="text"],
+input[type="text"]:focus {
+  font-size: inherit;
+}
+#search-icon {
+  font-size: 16px;
+  margin-right: 5px;
+}
+#search {
+  width: 100%;
+  transition: all .3s ease-in-out;
+}
+#search:hover,
+#search:focus {
+  box-shadow: 1px 1px 2px rgb(200,200,200);
+  transition: all .3s ease-in-out;
+}
+.dark-bluish-gray {
+  color: #37474f;
+}
+.index-list {
+  width: 80%; 
   text-align: center;
 }
-.footer-fab {
-  text-align: center;
-  color: rgba(0,0,0,.8);
-  margin: 2px 8px;
-  padding: 0 2px;
-  font-size: 14px;
-  border-radius: 10%;
-  transition: all .2s ease-in-out;
-}
-.footer-fab:hover {
-  color: rgba(0,0,0,1);
-  transform: scale(1.20);
-  transition: all .2s ease-in-out;
-}
-.about-fab {
-  font-size: 40px;
-}
-.spacer {
-  margin-top: 60px;
-}
-#about {
-  background-color: rgba(255,255,255,1);
+.space-bar {
+  width: 575px;
+  height: 30px;
   border-radius: 5px;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  padding: 0 2%;
+  border: solid 2px #2962ff;
+  background-color: #2962ff;
 }
-#contact {
-  background-color: #fff;
-  margin: 0 auto;
-  padding: 0 10% 30px 10%;
-  width: 100%;
-  border-radius: 5px;
+/* Some modified Bootstrap stuff (Or I made them up to fix something) */
+.fixed-heading {
+  text-align: center; 
+  width: 100%; 
+  margin: 30px auto 0 auto;
 }
-.trail-one,
-.trail-two,
-.trail-three,
-.trail-four {
-  background-color: rgb(255,255,255);
-  margin: 2% 0 2% 25%;
-  height: 15px;
-  width: 2px;
-  position: relative;
-}
-.trail-two {
-  margin-left: 75%;
-}
-.trail-three {
-  margin-left: 55%;
-}
-.trail-four {
-  margin-left: 40%;
-}
-.test-container {
-  background-color: #fff;
-  padding-top: 100px;
-  padding-bottom: 500px;
+.fixed-heading-col {
+  padding: 30px;
 }
 .row-modified {
+  width: 70%;
+  text-align: center;
   margin: 0 auto;
-  padding: 0;
 }
-/*=================================================*/
-/*        <--- End of me making a mess --->        */
-/*=================================================*/
-/*==================================================*/
-/*     <--- Media query-ing responsy-stuff --->     */
-/*==================================================*/
-@media (min-width: 947px) {  
-  .navbar-wrapper {
-    top: 0;
-    margin: -510px auto 0 auto;
-    cursor: pointer;
-  }
-  .spacer {
-    margin-top: 550px;
-  }
-  .row-modified {
-    padding: 180px 50px 0 50px;
-    border-right: 2px solid rgba(0,0,0,.1);
-    border-left: 2px solid rgba(0,0,0,.1);
-    width: 100%;
-  }
-  .navbar-inverse {
-    background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1), rgba(255,255,255,0));
-    border: none;
-  }
-  .navbar-nav {
-    float: none;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-  }
-  .navbar-nav > li {
-    display: inline-block;
-    float: none;
-  }
-  .navbar-wrapper .container {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  .navbar-wrapper .navbar {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  .test-container {
-    background-color: #fff;
-    padding-top: 300px;
-    padding-bottom: 500px;
-  }
-  .jumbotron {
-    padding: 0;
-  }
-  .jumbotron > h1 {
-    display: block;
-    width: 60%;
-    font-size: 50pt;
-    margin: 0 auto;
-    padding: 0;
-    line-height: 105px;
-    letter-spacing: 5px;
-    text-align: center;
-    border: none;
-    background: -webkit-linear-gradient(rgba(0,0,255,1), rgba(0,0,255,.2));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transition: all .7s ease-in-out;
-  }
-  .jumbotron > h1:hover {
-    -webkit-filter: blur(2px) grayscale(90%);
-    filter: blur(2px) grayscale(90%);
-    transition: all .7s ease-in-out;
-  }
-  .trail-one,
-  .trail-two,
-  .trail-three,
-  .trail-four {
-    background-color: rgb(255,255,255);
-    margin: 2% 0 2% 25%;
-    height: 20px;
-    width: 5px;
-    position: relative;
-  }
-  .trail-two {
-    margin-left: 75%;
-  }
-  .trail-three {
-    margin-left: 55%;
-  }
-  .trail-four {
-    margin-left: 40%;
-  }
-  #about {
-    background-color: rgba(255,255,255,1);
-    border-radius: 5px;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 50px 300px;
-    border-right: 4px solid rgb(0,0,0);
-    border-left: 4px solid rgb(0,0,0);
-  }
-  .about-p {
-    background-color: rgba(255,255,255,1);
-    font-size: 14px;
-  }
-  #desktop {
-    width: 100%;
-  }
-  #lego-jack {
-    margin-top: 80px;
-    width: 300px;
-  }
-  .col-lg-4 {
-    width: 50%;
-  }
-  .featurette-heading {
-    font-size: 20px;
-  }
-  #moogle {
-    background-color: rgb(255,255,255);
-    border-radius: 5px;
-    max-width: 100%;
-    margin: 0 auto;
-  }
-  #moogle-container {
-    padding: 8% 0 5% 0;
-  }
-  .heading-modified {
-    margin: 0 auto 40px auto;
-    background-color: rgb(255,255,255);
-  }
-  .footer-fab {
-    font-size: 20px;
-  }
-  #contact {
-    background-color: #fff;
-    margin: 0 auto;
-    padding: 43px 30% 30px 30%;
-    width: 100%;
-    border-radius: 5px;
-  }
-  #footer-name {
-    font-size: 8pt;
-    letter-spacing: 5px;
-  }
-  #my-name {
-    cursor: pointer;
-  }
+.navbar-modified {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 12px;
+  cursor: pointer;
 }
-@media (min-width: 992px) {
-  .featurette-heading {
-    margin-top: 60px;
-  }
+.navbar .nav {
+  float: right;
+  margin: -10px auto 0 auto;
 }
-/*=================================================*/
-/*           <--- That's all, folks --->           */
-/*=================================================*/
+.nav>li>a:hover, .nav>li>a:focus, .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
+  background: transparent;
+  text-decoration: underline;
+}
+.dropdown-menu {
+  display: none;
+}
+.footer-container {
+  padding: 50px 300px;
+}
+#contact {
+  display: none;
+}
+#about {
+  display: none;
+}
+#projects {
+  display: none;
+}
+#links {
+  display: none;
+}
+#jack {
+  width: 220px;
+  border-radius: 15px;
+}
+#links ul {
+  margin-top: 30px;
+  list-style-type: none;
+  text-align: center;
+}
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    .site-title {
+      font-size: 4em;
+    }
+    .container {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+    .no-space {
+      letter-spacing: -25px;
+    }
+    .search-card {
+      margin: 0 auto;
+      width: 90%;
+    }
+    .nav li {
+      float: left;
+    }
+    #links ul {
+      margin-left: -50px;
+      text-align: left;
+    }
+}
+

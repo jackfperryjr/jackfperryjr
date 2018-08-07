@@ -2,55 +2,81 @@
 // <--        jackfperryjr.com       -->
 // =====================================
 
-let bgPictures = [
-    "images/cavern.jpg",
-    "images/icecream.jpg",
-    "images/lanterns.jpg",
-    "images/sakura.jpg",
-    "images/mantis.jpg",
-    "images/tunnel.jpg",
-    "images/paper-cranes.jpg"
-]
-
-let randomBgPicture = bgPictures[Math.floor(Math.random()*bgPictures.length)];
-
-$("#bg-about").css("background-image", 'url(' + randomBgPicture +')');
-
-// <-- Hey, DOM, you ready? -->
-// ============================
 $(document).ready(function() {
-    $(".moogle-button").click(function() {
+    $(".project-button").click(function() {
+        closeTabs();
+        $("#projects:hidden").fadeIn();
+        /*
         $('html,body').animate({
             scrollTop: $(".moogle-container").offset().top},
             'slow');
+        */
     });
 
     $(".about-button").click(function() {
+        closeTabs();
+        $("#about:hidden").fadeIn();
+        /*
         $('html,body').animate({
             scrollTop: $("#about").offset().top},
             'slow');
+        */
     });
 
     $(".contact-button").click(function() {
+        closeTabs();
+        $("#contact:hidden").fadeIn();
+        /*
         $('html,body').animate({
             scrollTop: $("#contact").offset().top},
             'slow');
+        */
     });
 
-    $(".test-container").click(function() {
+    $(".link-button").click(function() {
+        closeTabs();
+        $("#links:hidden").fadeIn();
+        /*
         $('html,body').animate({
-            scrollTop: $(".navbar-wrapper").offset().top},
+            scrollTop: $("#contact").offset().top},
             'slow');
-    });
-
-    $("#my-name").click(function() {
-        $('html,body').animate({
-            scrollTop: $('.test-container').offset().top},
-            'slow');
+        */
     });
 });
 
-// <-- Adding current year copyright --->
+function closeTabs() {
+    $("#contact:visible").hide();
+    $("#about:visible").hide();
+    $("#projects:visible").hide();
+    $("#links:visible").hide();
+}
+
+$('#search').keyup(function() {
+    let searchField = $(this).val().toLowerCase();
+    //if(searchField === '') {
+      //  closeTabs();
+        //return;
+    //}
+    if (searchField == "about") {
+        closeTabs();
+        $("#about:hidden").show();
+    }
+    if (searchField == "contact") {
+        closeTabs();
+        $("#contact:hidden").show();
+    }
+    if (searchField == "projects") {
+        closeTabs();
+        $("#projects:hidden").show();
+    }
+    if (searchField == "links") {
+        closeTabs();
+        $("#links:hidden").show();
+    }
+});
+
+
+// <-- Adding current year to copyright --->
 // ======================================
 let year = new Date().getFullYear();
 document.getElementById('footer-name').innerHTML = "&copy; " + year + " <a id='my-name'>jack f. perry, jr.</a>";

@@ -30,82 +30,55 @@
     <link rel="icon" href="images/icon-jack.png">
     <title>jackfperryjr</title>
   </head>
-  <body id="bg-about">
-    <!-- ================== -->
-    <!-- Header-like stuff. -->
-    <div class="test-container">
-      <div class="jumbotron">
-        <h1 class="bounceInDown"><strong>jackfperryjr</strong></h1>
+  <body>
+    <div class="container">
+      <div class="row fixed-heading">
+        <div class="col-md-12 fixed-heading-col">
+            <h1 class="site-title">
+                <span class="blue no-space">j</span>
+                <span class="blue no-space">a</span>
+                <span class="blue no-space">c</span>
+                <span class="blue no-space">k</span>
+                <span class="green no-space">f</span>
+                <span class="blue no-space">p</span>
+                <span class="blue no-space">e</span>
+                <span class="blue no-space">r</span>
+                <span class="blue no-space">r</span>
+                <span class="blue no-space">y</span>
+                <span class="green no-space">j</span>
+                <span class="green no-space">r</span>
+            </h1>
+        </div>
       </div>
-    </div>
-    <!-- End of that. -->
-    <!-- ============ -->
-    <!-- =============== -->
-    <!-- Navigation-ator -->
-    <div class="navbar-wrapper lightSpeedIn">
-      <div class="container">
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li><a class="about-button"><strong>&lt; about &gt;</strong></a></li>
-                <li><a class="moogle-button"><strong>&lt; projects &gt;</strong></a></li>
-                <li><a class="contact-button"><strong>&lt; contact &gt;</strong></a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><strong>&lt; links &gt;</strong></a>
-                  <ul class="dropdown-menu">                    
-                    <li><a href="https://moogleapi.azurewebsites.net" target="_blank">moogle</a></li>
-                    <li><a href="https://github.com/jackfperryjr/sephiroth" target="_blank">sephiroth</a></li>
-                    <li><a href="http://considerboutique.com/" target="_blank">considerboutique.com</a></li>
-                    <li><a href="https://jackfperryjr.github.io/final-fantasy-angularjs/" target="_blank">final fantasy compendium</a></li>
-                    <li><a href="https://jackfperryjr.github.io/resume/" target="_blank">my resumé on the web</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+    <div class="search-card">
+      
+        <form class="form-inline has-feedback">
+            <input id="search" class="form-control" type="input" placeholder="Search ex. ''About'', ''Contact'', ''Projects'''">
+            <i id="search-icon" class="glyphicon glyphicon-search form-control-feedback black"></i>
+        </form>
+      
+          <nav class="navbar navbar-modified">
+                <ul class="nav navbar-nav">
+                  <li><a class="project-button"><strong>projects</strong></a></li>
+                  <li><a class="about-button"><strong>about</strong></a></li>
+                  <li><a class="contact-button"><strong>contact</strong></a></li>
+                  <li><a class="link-button"><strong>links</strong></a></li>
+                </ul>
+          </nav>
       </div>
-    </div>
-    <div class="spacer"></div>
-    <div class="trail-one"></div>
-    <div class="trail-one"></div>
-    <div class="trail-one"></div>
-    <div class="trail-one"></div>    
-    <div class="trail-one"></div>
-    <div class="trail-one"></div>
-    <div class="trail-one"></div>
-    <div class="trail-one"></div>
-    <div class="trail-one"></div>
-    <!-- End of that thing. -->
-    <!-- ================== -->
-    <!-- ===================================== -->
-    <!-- Centering stuff in another container. -->
-    <div id="desktop" class="marketing">
-      <!-- ================================== -->
-      <!-- Stuff under the header-like thing. -->
         <div id="about">
           <div class="row row-modified">
-            <div class="col-md-7">
-              <h1>About Me<br/><span class="text-muted"><h2>Jack F. Perry, Jr.</h2></span></h1>
-              <p class="about-p">From Metroid to Final Fantasy to DragonRealms to Skyrim to here! You found me.</p>
-              <p>I graduated with an Associate's in Applied Sciences (Computer Programming). I'm also a graduate of Code Louisville in both Front End Web Develeopment and C#/.NET. Learning is a passion of mine and I continue to teach myself new programming languages, technologies, and best practices on a daily basis!
-              </p>
-            </div>
-            <div class="col-md-5">
-              <img id="lego-jack" class="featurette-image img-responsive center-block black-and-white" src="images/profile-me.jpg" alt="Circle with a real picture of Jack's face." title="Jack's face.">
-            </div>
+              <div class="col-md-6">
+                  <img id="jack" class="featurette-image img-responsive center-block" src="images/profile-me.jpg" alt="Circle with a real picture of Jack's face." title="Jack's face.">
+              </div>
+          <!--
           </div>
           <div class="row row-modified">
-            <div class="col-md-12">
+          -->
+            <div class="col-md-6">
+              <h4>About Me: <span class="blue">Jack F. Perry, Jr</span>.</h4>
+              <h4>From Metroid to Final Fantasy to DragonRealms to Skyrim to here! You found me.</h4>
+              <h4>I graduated with an Associate's in Applied Sciences (Computer Programming). I'm also a graduate of Code Louisville in both Front End Web Develeopment and C#/.NET. Learning is a passion of mine and I continue to teach myself new programming languages, technologies, and best practices on a daily basis!</h4>
               <p class="about-fab">
                 <span style="font-size:16px;">Some skills:</span><br/>
                 <i class="devicon-html5-plain colored"></i>
@@ -127,184 +100,35 @@
             </div>
           </div>
         </div>
-      <!-- End of that stuff. -->
-      <!-- ================== -->
-      <div class="trail-two"></div>
-      <div class="trail-two"></div>
-      <div class="trail-two"></div>
-      <div class="trail-two"></div>
-      <div class="trail-two"></div>
-      <div class="trail-two"></div>
-      <div class="trail-two"></div>
-      <div class="trail-two"></div>
-      <div class="trail-two"></div>
-      <div id="projects"></div>
-      <!-- ==============================-->
-      <!-- Start of Moogle section. -->
-      <div class="moogle-container">
+      <div id="projects">
         <div class="row row-modified">
-            <div class="col-md-3 text-center">
+            <div class="col-md-4 text-center">
             <h1 class="heading-modified">Moogle</h1>
             <p class="about-p text-left">Moogle is a single page application (SPA) I've built using an API I've also built and is managed with an MVC that I, again, built. (I like this stuff!). I've put together a little slideshow below for your viewing pleasure, but follow this <a href="https://moogleapi.azurewebsites.net" target="_blank">link</a> to see it live.</p>
-            <a class="text-center" data-toggle="modal" href="#moogleModal"><img style="width: 200px;margin: 0 auto 20px auto;" src="images/moogle/moogle-02.png"></a>
+            <a class="text-center" href="https://www.moogleapi.com" target="_blank"><img style="width: 200px;margin: 0 auto 20px auto;" src="images/moogle/moogle-02.png"></a>
           </div>
-          <div class="col-md-3 text-center">
+          <div class="col-md-4 text-center">
             <h1 class="heading-modified">Final Fantasy Compendium</h1>
             <p class="about-p text-left">The Final Fantasy Compendium was my first Code Louisville FEWD project. It's pretty simple but it does use a wee bit of AngularJs. Check it out!</p>
-            <a class="text-center" data-toggle="modal" href="#ffcompModal"><img style="width: 200px;margin: 0 auto 20px auto;" src="images/ff-comp/ff-comp.png"></a>
+            <a class="text-center" href="https://jackfperryjr.github.io/final-fantasy-angularjs" target="_blank"><img style="width: 200px;margin: 0 auto 20px auto;" src="images/ff-comp/ff-comp.png"></a>
           </div>
-          <div class="col-md-3 text-center">
-            <h1 class="heading-modified">Consider Boutique</h1>
-            <p class="about-p text-left">Consider Boutique is a local business that I worked with to migrate their webhosting from one service to another. In the process, I noted and recommended a redesign. They agreed and asked if I could help them out. It was a small redesign utilizing mostly CSS and Bootstrap.</p>
-            <a class="text-center" data-toggle="modal" href="#considerModal"><img style="width: 200px;margin: 0 auto 20px auto;" src="images/consider/consider.png"></a>
-          </div>
-          <div class="col-md-3 text-center">
+          <div class="col-md-4 text-center">
             <h1 class="heading-modified">Sephiroth</h1>
             <p class="about-p text-left">Sephiroth is the repository name for a time off request application I've titled Zenith; it's a work in progress. Currently there's three users in the database with different roles and can access different things based on those roles. At the moment it's still just using the stock Bootstrap styling.</p>
-            <a class="text-center" data-toggle="modal" href="#sephirothModal"><img style="width: 200px;margin: 0 auto 20px auto;" src="images/sephiroth/sephiroth.png"></a>
+            <a class="text-center" data-toggle="modal" href="#sephirothModal"><img style="width: 200px;margin: 0 auto 20px auto;padding:5px;" src="images/sephiroth/sephiroth.jpg"></a>
           </div>
         </div>
-        <div class="modal fade" id="ffcompModal" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-lg">
-              <div class="modal-content text-center">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal"><img style="width: 100px;margin: 0 auto;" src="images/ff-comp/ff-comp.png"> X</button>
-                </div>
-                <div class="modal-body">
-                    <div id="ffcompCarousel" class="carousel slide" data-ride="carousel">
-                      <!-- ============================================================ -->
-                      <!-- Rappers (Yes, rappers. But not gangsta rappers.) for slides. -->
-                      <div class="carousel-inner shadow">
-                        <div class="item active">
-                          <img src="images/ff-comp/ff-comp-search.png" alt="Final Fantasy Compendium homepage.">
-                        </div>
-                        <div class="item">
-                          <img src="images/ff-comp/ff-comp-result.png" alt="Final Fantasy Compendium displaying a character.">
-                        </div>
-                      </div>
-                      <!-- ======================== -->
-                      <!-- Left and right controls. -->
-                      <a class="left carousel-control" href="#ffcompCarousel" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                        <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="right carousel-control" href="#ffcompCarousel" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                        <span class="sr-only">Next</span>
-                      </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="modal fade" id="considerModal" tabindex="-1" role="dialog">
-              <div class="modal-dialog modal-lg">
-                <div class="modal-content text-center">
-                  <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal"><img style="width: 100px;margin: 0 auto;" src="images/consider/consider.png"> X</button>
-                  </div>
-                  <div class="modal-body">
-                      <div id="considerCarousel" class="carousel slide" data-ride="carousel">
-                        <!-- ============================================================ -->
-                        <!-- Rappers (Yes, rappers. But not gangsta rappers.) for slides. -->
-                        <div class="carousel-inner shadow">
-                          <div class="item active">
-                            <img src="images/consider/consider-home.png" alt="Moogle homepage.">
-                          </div>
-                          <div class="item">
-                            <img src="images/consider/consider-about.png" alt="Moogle home page displaying a character.">
-                          </div>
-                          <div class="item">
-                            <img src="images/consider/consider-gallery.png" alt="Modal view of search result image.">
-                          </div>
-                          <div class="item">
-                            <img src="images/consider/consider-contact.png" alt="Hidden sign-in for users.">
-                          </div>
-                        </div>
-                        <!-- ======================== -->
-                        <!-- Left and right controls. -->
-                        <a class="left carousel-control" href="#considerCarousel" data-slide="prev">
-                          <span class="glyphicon glyphicon-chevron-left"></span>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#considerCarousel" data-slide="next">
-                          <span class="glyphicon glyphicon-chevron-right"></span>
-                          <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        <div class="modal fade" id="moogleModal" tabindex="-1" role="dialog">
-          <div class="modal-dialog modal-lg">
-            <div class="modal-content text-center">
-              <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal"><img style="width: 100px;margin: 0 auto;" src="images/moogle/moogle-02.png"> X</button>
-              </div>
-              <div class="modal-body">
-                  <div id="moogleCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- ============================================================ -->
-                    <!-- Rappers (Yes, rappers. But not gangsta rappers.) for slides. -->
-                    <div class="carousel-inner shadow">
-                      <div class="item active">
-                        <img src="images/moogle/homepage.png" alt="Moogle homepage.">
-                      </div>
-                      <div class="item">
-                        <img src="images/moogle/homepage-result.png" alt="Moogle home page displaying a character.">
-                      </div>
-                      <div class="item">
-                        <img src="images/moogle/homepage-result-picture.png" alt="Modal view of search result image.">
-                      </div>
-                      <div class="item">
-                        <img src="images/moogle/sign-in.png" alt="Hidden sign-in for users.">
-                      </div>
-                      <div class="item">
-                        <img src="images/moogle/sign-in-profile.png" alt="User profile page.">
-                      </div>
-                      <div class="item">
-                        <img src="images/moogle/sign-in-users.png" alt="New user registration page.">
-                      </div>
-                      <div class="item">
-                        <img src="images/moogle/sign-in-characters.png" alt="Character management page.">
-                      </div>
-                      <div class="item">
-                        <img src="images/moogle/sign-in-details.png" alt="Character details page.">
-                      </div>
-                      <div class="item">
-                        <img src="images/moogle/sign-in-edit.png" alt="Character edit page.">
-                      </div>
-                      <div class="item">
-                        <img src="images/moogle/sign-in-delete.png" alt="Character delete page.">
-                      </div>
-                    </div>
-                    <!-- ======================== -->
-                    <!-- Left and right controls. -->
-                    <a class="left carousel-control" href="#moogleCarousel" data-slide="prev">
-                      <span class="glyphicon glyphicon-chevron-left"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#moogleCarousel" data-slide="next">
-                      <span class="glyphicon glyphicon-chevron-right"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+          
       <div class="modal fade" id="sephirothModal" tabindex="-1" role="dialog">
           <div class="modal-dialog modal-lg">
             <div class="modal-content text-center">
               <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal"><img style="width: 100px;margin: 0 auto;" src="images/sephiroth/sephiroth.png"> X</button>
+                  <button type="button" class="close" data-dismiss="modal"><img style="width: 100px;margin: 0 auto;" src="images/sephiroth/sephiroth.jpg"> X</button>
               </div>
+
               <div class="modal-body">
                   <div id="sephirothCarousel" class="carousel slide" data-ride="carousel">
-                    <!-- ============================================================ -->
-                    <!-- Rappers (Yes, rappers. But not gangsta rappers.) for slides. -->
+                    
                     <div class="carousel-inner shadow">
                       <div class="item active">
                         <img src="images/sephiroth/homepage.png" alt="Boring .NET Bootstrap homepage.">
@@ -322,8 +146,7 @@
                         <img src="images/sephiroth/create.png" alt="Test user view of create request.">
                       </div>
                     </div>
-                    <!-- ======================== -->
-                    <!-- Left and right controls. -->
+                   
                     <a class="left carousel-control" href="#sephirothCarousel" data-slide="prev">
                       <span class="glyphicon glyphicon-chevron-left"></span>
                       <span class="sr-only">Previous</span>
@@ -338,54 +161,44 @@
           </div>
         </div>
       </div>
-      <!-- End of Moogle. -->
-      <!-- =================== -->
-      <div class="trail-three"></div>
-      <div class="trail-three"></div>
-      <div class="trail-three"></div>
-      <div class="trail-three"></div>
-      <div class="trail-three"></div>
-      <div class="trail-three"></div>
-      <div class="trail-three"></div>
-      <div class="trail-three"></div>
-      <!-- ========================= -->
-      <!-- Contact info! Contact me! -->
+    
       <div id="contact">
         <div class="row row-modified">
           <div class="col-md-12">
-            <h2>If you'd like to work with me: <br/><span class="text-muted"><h1>Contact me!</h1></span></h2>
-            <p class="lead">+1.502.644.6855<br>
-            <a href="mailto:jack.franklin.perryjr@gmail.com">jack.franklin.perryjr@gmail.com</a></p>
+            <h4 class="lead">If you'd like to work with me: <br/><span class="text-muted">Contact me!</span></h4>
+            <h4>+1.502.644.6855</h4>
+            <h4><a href="mailto:jack.franklin.perryjr@gmail.com">jack.franklin.perryjr@gmail.com</a></h4>
+            <h4>Louisville, KY</h4>
+            <a href="https://www.linkedin.com/in/jackfperryjr/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/jackfperryjr" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://github.com/jackfperryjr" target="_blank"><i class="fab fa-github-square"></i></a>
+            <a href="https://www.instagram.com/jackfperryjr/" target="_blank"><i class="fab fa-instagram"></i></a>
           </div>
         </div>
       </div>
-      <!-- End of contact. -->
-      <!-- =============== -->
-      <div class="trail-four"></div>
-      <div class="trail-four"></div>
-      <div class="trail-four"></div>  
-      <div class="trail-four"></div>
-      <div class="trail-four"></div>
-      <div class="trail-four"></div>  
-      <div class="trail-four"></div>
-      <div class="trail-four"></div>
-      <div class="trail-four"></div>      
-      <!-- ======= -->
-      <!-- Footer. -->
-      <footer>
-        <span id="footer-name"></span>
-        <span class="pull-right">
-          <a href="https://www.linkedin.com/in/jackfperryjr/" target="_blank"><i class="fab fa-linkedin footer-fab"></i></a>
-          <a href="https://www.facebook.com/jackfperryjr" target="_blank"><i class="fab fa-facebook-square footer-fab"></i></a>
-          <a href="https://github.com/jackfperryjr" target="_blank"><i class="fab fa-github-square footer-fab"></i></a>
-          <a href="https://www.instagram.com/jackfperryjr/" target="_blank"><i class="fab fa-instagram footer-fab"></i></a>
-        </span>
-      </footer>
-      <!-- End of footer. -->
-      <!-- ============== -->
+
+      <div id="links">
+        <div class="row row-modified">
+          <div class="col-md-12">
+            <ul>
+              <li><a href="https://www.moogleapi.com" target="_blank">Moogle</a></li>
+              <li><a href="https://github.com/jackfperryjr/sephiroth" target="_blank">Sephiroth</a></li>
+              <li><a href="https://jackfperryjr.github.io/final-fantasy-angularjs/" target="_blank">Final Fantasy Compendium</a></li>
+              <li><a href="https://jackfperryjr.github.io/resume/" target="_blank">Resumé</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    
     </div>
-    <!-- End of main content container. -->
-    <!-- ============================== -->
+    <div class="container footer-container">
+      <footer>
+        <hr/>
+        <span id="footer-name"></span>
+      </footer>
+    </div>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries. (Ugh.) -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -393,7 +206,7 @@
     <![endif]-->
     <!-- ===================================================== -->
     <!-- JQuery, Bootstrap JS, and a little something from me. -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>    
     <script src="index.js"></script>
   </body>
