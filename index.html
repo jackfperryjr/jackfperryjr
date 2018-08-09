@@ -53,16 +53,17 @@
     <div class="search-card">
       
         <form class="form-inline has-feedback">
-            <input id="search" class="form-control" type="input" placeholder="Search ex. ''About'', ''Contact'', ''Projects'''">
+            <input id="search" class="form-control" type="input" placeholder="Search ex. ''About'', ''Contact'', ''Projects'''" title="You can type the name of the sections to view them">
             <i id="search-icon" class="glyphicon glyphicon-search form-control-feedback black"></i>
         </form>
       
           <nav class="navbar navbar-modified">
                 <ul class="nav navbar-nav">
-                  <li><a class="project-button"><strong>projects</strong></a></li>
-                  <li><a class="about-button"><strong>about</strong></a></li>
-                  <li><a class="contact-button"><strong>contact</strong></a></li>
-                  <li><a class="link-button"><strong>links</strong></a></li>
+                  <li><a class="project-button" title="Click to view projects"><strong>projects</strong></a></li>
+                  <li><a class="about-button" title="Click to read about me"><strong>about</strong></a></li>
+                  <li><a class="contact-button" title="Click to view contact information"><strong>contact</strong></a></li>
+                  <li><a class="link-button" title="Click to view links"><strong>links</strong></a></li>
+                  <li><a onclick="closeTabs()" title="Click to close section"><strong>x</strong></a></li>                  
                 </ul>
           </nav>
       </div>
@@ -101,7 +102,7 @@
           </div>
         </div>
       <div id="projects">
-        <div class="row row-modified">
+        <div class="row">
             <div class="col-md-4 text-center">
             <h1 class="heading-modified">Moogle</h1>
             <p class="about-p text-left">Moogle is a single page application (SPA) I've built using an API I've also built and is managed with an MVC that I, again, built. (I like this stuff!). I've put together a little slideshow below for your viewing pleasure, but follow this <a href="https://moogleapi.azurewebsites.net" target="_blank">link</a> to see it live.</p>
