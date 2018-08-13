@@ -465,6 +465,9 @@ input[type="text"]:focus {
     .nav li {
       float: left;
     }
+    .nav > li > a {
+      padding: 10px 5px;
+    }
     #links ul {
       margin-left: -50px;
       text-align: left;
