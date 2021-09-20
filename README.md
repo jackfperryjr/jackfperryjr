@@ -1,16 +1,26 @@
-## I'm Jack  
-`// I'm a software engineer turned cloud engineer turned dad and I like Final Fantasy.`  
+```csharp
+namespace Jack.F.Perry.Jr
+{  
+    // I'm a software engineer turned cloud engineer turned dad and I like Final Fantasy.
+    public class Character
+    {  
+        // TODO: Make this cool.
+    }  
+}
+```
+
+[![](/assets/moogleapi-cap.png)](https://www.moogleapi.com)  
+```javascript 
+// There's a fun little easter egg on the page. Let me know if you find it!
+```
 <br/>
 
 ![GitHub User's stars](https://img.shields.io/github/stars/jackfperryjr?style=social)
 ![GitHub followers](https://img.shields.io/github/followers/jackfperryjr?style=social)
 <br/>
 
-[![](/assets/moogleapi-cap.png)](https://www.moogleapi.com)  
-`// There's a fun little easter egg on the page. Let me know if you find it!`
-<br/>
-
 `// My preferred stack of tools`  
+
 ![](/assets/azure.png)
 ![](/assets/js.png)
 ![](/assets/net.png)
@@ -18,6 +28,7 @@
 ![](/assets/vscode.png)
 
 `// Find me!`  
+
 ![](https://img.shields.io/badge/dragonrealms-ask!-white)
 ![](https://img.shields.io/badge/twitter-jackfperryjr-informational)
 ![](https://img.shields.io/badge/instagram-jackfperryjr-orange)  
