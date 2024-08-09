@@ -8,11 +8,6 @@ namespace Jack.F.Perry.Jr
     }  
 }
 ```
-
-[![](/assets/moogleapi-cap.png)](https://www.moogleapi.com)  
-```javascript 
-// There's a fun little easter egg on the page. Let me know if you find it!
-```
 <br/>
 
 ![GitHub User's stars](https://img.shields.io/github/stars/jackfperryjr?style=social)
