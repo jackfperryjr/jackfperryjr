@@ -28,7 +28,7 @@ namespace Jack.F.Perry.Jr
 ![](https://img.shields.io/badge/twitter-jackfperryjr-informational)
 ![](https://img.shields.io/badge/instagram-jackfperryjr-orange)  
 ![](https://img.shields.io/badge/steam-jackfperryjr-%23203354)
-![](https://img.shields.io/badge/discord-jackfperryjr%235508-blueviolet)
+![](https://img.shields.io/badge/discord-jackfperryjr-blueviolet)
 ![](https://img.shields.io/badge/linkedin-jackfperryjr-informational)  
 ![](https://img.shields.io/badge/gmail-jackfperryjr-red)
 ![](https://img.shields.io/badge/zoom-jackfperryjr-blue)
